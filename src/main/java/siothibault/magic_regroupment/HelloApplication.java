@@ -14,6 +14,8 @@ public class HelloApplication extends Application {
     public static void main(String[] args) {
         launch();
 
+
+
         public void invisible(AnchorPane apCourante){apCourante.setVisible(false);return;}
 
         public void clearAll()

@@ -7,9 +7,13 @@ public class Carte {
     private int force;
     private int defense;
 
+    public Carte(String name, String color, String img, int force, int defense) {
+    }
+
     public String getName() {
         return this.name;
     }
+    public String getImage(){return this.img;}
     public int getDefense() {
         return this.defense;
     }

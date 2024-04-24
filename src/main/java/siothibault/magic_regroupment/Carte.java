@@ -13,6 +13,7 @@ public class Carte {
     public String getName() {
         return this.name;
     }
+    public String getImage(){return this.img;}
     public int getDefense() {
         return this.defense;
     }

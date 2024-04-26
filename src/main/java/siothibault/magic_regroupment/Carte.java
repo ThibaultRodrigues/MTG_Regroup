@@ -6,8 +6,10 @@ public class Carte {
     private String img;
     private int force;
     private int defense;
+    private int prix;
 
-    public Carte(String name, String color, String img, int force, int defense) {
+
+    public Carte(String name, String color, String img, int force, int defense,int prix) {
     }
 
     public String getName() {
@@ -20,4 +22,5 @@ public class Carte {
     public int getForce(){
         return this.force;
     }
+    public int getPrix() {return prix;}
 }

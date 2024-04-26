@@ -13,8 +13,8 @@ import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.ArrayList;
 
-public class HelloController {
-    public static HelloController implements Initializable{
+public class HelloController implements Initializable{
+
 
         @FXML
         private AnchorPane MenuChoix;
@@ -59,7 +59,7 @@ public class HelloController {
             invisible(MenuEau);
             invisible(MenuFeu);
             invisible(MenuColore);
-            invisible(MenuCollection);
+            //invisible(MenuCollection);
         }
 
         // Change d'AnchorPane ------------------------------------------------------------------------------------------ //
@@ -78,7 +78,11 @@ public class HelloController {
         // Genere un nombre aleatoire entre 0 et 100. ------------------------------------------------------------------- //
         public int alea() { return (int)(Math.random() * 101 ); } // 0 to 100
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
     }
+
     public static void main(String[] args) {
 
         int Inigma = 250;
@@ -273,4 +277,4 @@ public class HelloController {
 
 
     }
-    }
+}

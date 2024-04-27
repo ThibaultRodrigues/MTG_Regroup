@@ -122,6 +122,7 @@ public class HelloController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        changeAP(MenuChoix);
 
     }
 

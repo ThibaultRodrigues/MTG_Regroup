@@ -32,17 +32,49 @@ public class HelloController implements Initializable{
         private  AnchorPane MenuEau;
 
         @FXML
+        private  AnchorPane MenuCollection;
+
+        @FXML
         private  AnchorPane MenuFeu;
 
         @FXML
-        private  AnchorPane MenuColore;
+        private  AnchorPane MenuMulticolor;
 
 
 
         @FXML
         public void goToDebut(Event event) {
-
             changeAP(MenuChoix);
+        }
+        public void goToMenuEau(Event event) {
+            changeAP(MenuEau);
+        }
+
+        public void goToMenu(Event event) {
+            changeAP(MenuFeu);
+        }
+        @FXML
+        public void goToMenuLumiere(Event event) {
+            changeAP(MenuLumiere);
+        }
+
+        public void goToCollection(Event event) {
+            changeAP(MenuCollection);
+        }
+
+        @FXML
+        public void goToMenuTenebre(Event event) {
+            changeAP(MenuTenebre);
+        }
+
+        @FXML
+        public void goToMenuVie(Event event) {
+            changeAP(MenuVie);
+        }
+
+        @FXML
+        public void goToMenuRainbow(Event event) {
+            changeAP(MenuMulticolor);
         }
 
         // Rend visible/invisible une AnchorPane ------------------------------------------------------------------------ //
@@ -58,14 +90,24 @@ public class HelloController implements Initializable{
             invisible(MenuVie);
             invisible(MenuEau);
             invisible(MenuFeu);
-            invisible(MenuColore);
-            //invisible(MenuCollection);
+            invisible(MenuMulticolor);
+            invisible(MenuCollection);
         }
 
         // Change d'AnchorPane ------------------------------------------------------------------------------------------ //
         public void changeAP(AnchorPane choice){
             clearAll();
             visible(choice);
+        }
+
+        public void changeImageViewImg(ImageView imgView, String linkImage){
+            imgView.setImage(
+                    new Image(
+                            getClass().getResource(
+                                    "/images/"+linkImage
+                            ).toExternalForm()
+                    )
+            );
         }
 
         // Donne un entier compris entre a et b ------------------------------------------------------------------------- //

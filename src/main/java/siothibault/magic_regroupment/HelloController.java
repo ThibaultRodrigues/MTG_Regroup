@@ -91,6 +91,7 @@ public class HelloController implements Initializable{
             invisible(MenuFeu);
             invisible(MenuMulticolor);
             invisible(MenuCollection);
+            invisible(MenuMarche);
         }
 
         // Change d'AnchorPane ------------------------------------------------------------------------------------------ //

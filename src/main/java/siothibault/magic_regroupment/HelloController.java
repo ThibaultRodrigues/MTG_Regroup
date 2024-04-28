@@ -38,7 +38,8 @@ public class HelloController implements Initializable{
         @FXML
         private  AnchorPane MenuMulticolor;
 
-
+        @FXML
+        private  AnchorPane MenuMarche;
 
         @FXML
         public void goToDebut(Event event) {

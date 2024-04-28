@@ -12,10 +12,19 @@ import java.util.ResourceBundle;
 import java.util.ArrayList;
 
 public class HelloController implements Initializable{
-
-
         @FXML
-        private AnchorPane MenuChoix;
+        private AnchorPane MenuVieCol;
+        @FXML
+        private AnchorPane MenuMulticolorCol;
+        @FXML
+        private AnchorPane MenuTenebreCol;
+        @FXML
+        private AnchorPane MenuEauCol;
+        @FXML
+        private AnchorPane MenuLumiereCol;
+        @FXML
+        private AnchorPane MenuFeuCol;
+        private AnchorPane Menuchoix;
 
         @FXML
         private  AnchorPane MenuLumiere;
@@ -43,7 +52,7 @@ public class HelloController implements Initializable{
 
         @FXML
         public void goToDebut(Event event) {
-            changeAP(MenuChoix);
+            changeAP(Menuchoix);
         }
         @FXML
         public void goToMenuEau(Event event) {changeAP(MenuEau);}
@@ -67,7 +76,13 @@ public class HelloController implements Initializable{
         // Cache toutes les AnchorPanes --------------------------------------------------------------------------------- //
         public void clearAll()
         {
-            invisible(MenuChoix);
+            invisible(MenuMulticolorCol);
+            invisible(MenuEauCol);
+            invisible(MenuFeuCol);
+            invisible(MenuLumiereCol);
+            invisible(MenuVieCol);
+            invisible(MenuTenebreCol);
+            invisible(Menuchoix);
             invisible(MenuLumiere);
             invisible(MenuTenebre);
             invisible(MenuVie);
@@ -98,7 +113,10 @@ public class HelloController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        changeAP(MenuChoix);
+        clearAll();
+        changeAP(Menuchoix);
+
+
         int Inigma = 250;
 
         ArrayList<Carte> collection = new ArrayList<>();

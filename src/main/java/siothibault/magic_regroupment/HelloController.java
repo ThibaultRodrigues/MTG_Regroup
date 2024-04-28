@@ -93,13 +93,6 @@ public class HelloController implements Initializable{
             );
         }
 
-        // Donne un entier compris entre a et b ------------------------------------------------------------------------- //
-        public int intervalleInt(int a, int b)
-        {
-            Random random = new Random();
-            return random.nextInt((b - a) + 1) + a;
-        }
-
         // Genere un nombre aleatoire entre 0 et 100. ------------------------------------------------------------------- //
         public int alea() { return (int)(Math.random() * 101 ); } // 0 to 100
 

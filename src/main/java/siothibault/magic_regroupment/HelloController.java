@@ -56,9 +56,13 @@ public class HelloController implements Initializable{
             changeAP(Menuchoix);
         }
         @FXML
+        public void goToMarche(Event event) {
+        changeAP(MenuMarche);
+    }
+        @FXML
         public void goToMenuEau(Event event) {changeAP(MenuEau);}
         @FXML
-        public void goToMenu(Event event) {changeAP(MenuFeu);}
+        public void goToMenuFeu(Event event) {changeAP(MenuFeu);}
         @FXML
         public void goToMenuLumiere(Event event) {changeAP(MenuLumiere);}
         @FXML

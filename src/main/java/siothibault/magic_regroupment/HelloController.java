@@ -24,6 +24,7 @@ public class HelloController implements Initializable{
         private AnchorPane MenuLumiereCol;
         @FXML
         private AnchorPane MenuFeuCol;
+        @FXML
         private AnchorPane Menuchoix;
 
         @FXML

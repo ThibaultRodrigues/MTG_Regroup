@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="siothibault.magic_regroupment.HelloController">
    <children>
       <AnchorPane fx:id="Menuchoix" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="384.0" prefWidth="697.0">
          <children>
@@ -164,7 +164,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuVie" disable="true" prefHeight="299.0" prefWidth="698.0">
+      <AnchorPane fx:id="MenuVie" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -242,7 +242,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuFeu" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuFeu" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -266,7 +266,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuMulticolor" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuMulticolor" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -290,7 +290,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuCollection" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuCollection" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -304,7 +304,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuMarche" prefHeight="396.0" prefWidth="0.0" visible="false">
+      <AnchorPane fx:id="MenuMarche" prefHeight="396.0" prefWidth="0.0">
          <children>
             <ImageView fitHeight="436.0" fitWidth="754.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -353,7 +353,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuLumiereCol" prefHeight="344.0" prefWidth="680.0" visible="false">
+      <AnchorPane fx:id="MenuLumiereCol" prefHeight="344.0" prefWidth="680.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -377,7 +377,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuTenebreCol" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuTenebreCol" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -401,7 +401,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuVieCol" disable="true" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuVieCol" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -425,7 +425,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuEauCol" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuEauCol" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -449,7 +449,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuFeuCol" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuFeuCol" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -473,7 +473,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuMulticolorCol" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuMulticolorCol" prefHeight="299.0" prefWidth="698.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>

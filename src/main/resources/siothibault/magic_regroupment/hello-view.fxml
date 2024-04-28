@@ -56,23 +56,23 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuLumiere" prefHeight="344.0" prefWidth="680.0" visible="false">
+      <AnchorPane fx:id="MenuLumiere" prefHeight="344.0" prefWidth="680.0">
          <children>
             <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Projet_MTG/Images_de_fond_Lumiere.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="459.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="181.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="448.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu1" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu2" fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu3" fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu4" fitHeight="150.0" fitWidth="112.0" layoutX="459.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu5" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu6" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu7" fitHeight="150.0" fitWidth="112.0" layoutX="181.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu8" fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu9" fitHeight="150.0" fitWidth="112.0" layoutX="448.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ImgLu10" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="MenuTenebre" prefHeight="299.0" prefWidth="698.0" visible="false">
@@ -177,6 +177,11 @@
                   <Image url="@Projet_MTG/Fond_collection.jpg" />
                </image>
             </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="MenuMarche" prefHeight="392.0" prefWidth="697.0" visible="false">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>
    </children>

@@ -19,7 +19,7 @@
                   <Image url="@Projet_MTG/type_multi.png" />
                </image>
             </ImageView>
-            <ImageView id="Type_lumiere" fx:id="Lumiere" fitHeight="99.0" fitWidth="96.0" layoutX="113.0" layoutY="32.0" onMouseClicked="GoToMenuLumiere()" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="Type_lumiere" fx:id="Lumiere" fitHeight="99.0" fitWidth="96.0" layoutX="113.0" layoutY="32.0" onMouseClicked="GoToMenuLumiere(onMouseClicked)" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Projet_MTG/type_lumirere.png" />
                </image>

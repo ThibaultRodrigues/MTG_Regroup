@@ -13,6 +13,8 @@ import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.ArrayList;
 
+import static com.sun.glass.ui.Cursor.setVisible;
+
 public class HelloController implements Initializable{
 
 
@@ -46,36 +48,20 @@ public class HelloController implements Initializable{
         public void goToDebut(Event event) {
             changeAP(MenuChoix);
         }
-        public void goToMenuEau(Event event) {
-            changeAP(MenuEau);
-        }
-
-        public void goToMenu(Event event) {
-            changeAP(MenuFeu);
-        }
         @FXML
-        public void goToMenuLumiere(Event event) {
-            changeAP(MenuLumiere);
-        }
-
-        public void goToCollection(Event event) {
-            changeAP(MenuCollection);
-        }
-
+        public void goToMenuEau(Event event) {changeAP(MenuEau);}
         @FXML
-        public void goToMenuTenebre(Event event) {
-            changeAP(MenuTenebre);
-        }
-
+        public void goToMenu(Event event) {changeAP(MenuFeu);}
         @FXML
-        public void goToMenuVie(Event event) {
-            changeAP(MenuVie);
-        }
-
+        public void goToMenuLumiere(Event event) {changeAP(MenuLumiere);}
         @FXML
-        public void goToMenuRainbow(Event event) {
-            changeAP(MenuMulticolor);
-        }
+        public void goToCollection(Event event) {changeAP(MenuCollection);}
+        @FXML
+        public void goToMenuTenebre(Event event) {changeAP(MenuTenebre);}
+        @FXML
+        public void goToMenuVie(Event event) {changeAP(MenuVie);}
+        @FXML
+        public void goToMenuRainbow(Event event) {changeAP(MenuMulticolor);}
 
         // Rend visible/invisible une AnchorPane ------------------------------------------------------------------------ //
         public void invisible(AnchorPane apCourante){apCourante.setVisible(false);return;}

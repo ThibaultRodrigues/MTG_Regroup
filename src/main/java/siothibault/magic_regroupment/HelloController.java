@@ -283,7 +283,7 @@ public class HelloController implements Initializable{
         Vie.add(Cv9);
         Vie.add(Cv10);
 
-        public static void ajout_carte_rainbow(ArrayList<Carte> collection) {
+        public static ArrayList<Carte> ajout_carte_rainbow() {
             if (alea() <= 10) {
                 collection.add(Cr1);
             }
@@ -316,7 +316,7 @@ public class HelloController implements Initializable{
             }
         }
 
-        public static void ajout_carte_eau(ArrayList<Carte> collection) {
+        public static ArrayList<Carte> ajout_carte_eau() {
             if (alea() <= 10) {
                 collection.add(Ce1);
             }
@@ -349,7 +349,7 @@ public class HelloController implements Initializable{
             }
         }
 
-        public static void ajout_carte_tenebre(ArrayList<Carte> collection) {
+        public static ArrayList<Carte> ajout_carte_tenebre() {
             if (alea() <= 10) {
                 collection.add(Ct1);
             }
@@ -383,7 +383,7 @@ public class HelloController implements Initializable{
         }
 
 
-        public static void ajout_carte_lumiere(ArrayList<Carte> collection) {
+        public static ArrayList<Carte> ajout_carte_lumiere() {
             if (alea() <= 10) {
                 collection.add(Cl1);
             }
@@ -413,6 +413,72 @@ public class HelloController implements Initializable{
             }
             else if (alea() > 90 && alea() <= 100) {
                 collection.add(Cl10);
+            }
+        }
+
+        public static ArrayList<Carte> ajout_carte_feu() {
+            if (alea() <= 10) {
+                collection.add(Cf1);
+            }
+            else if (alea() > 10 && alea() <= 20) {
+                collection.add(Cf2);
+            }
+            else if (alea() > 20 && alea() <= 30) {
+                collection.add(Cf3);
+            }
+            else if (alea() > 30 && alea() <= 40) {
+                collection.add(Cf4);
+            }
+            else if (alea() > 40 && alea() <= 50) {
+                collection.add(Cf5);
+            }
+            else if (alea() > 50 && alea() <= 60) {
+                collection.add(Cf6);
+            }
+            else if (alea() > 60 && alea() <= 70) {
+                collection.add(Cf7);
+            }
+            else if (alea() > 70 && alea() <= 80) {
+                collection.add(Cf8);
+            }
+            else if (alea() > 80 && alea() <= 90) {
+                collection.add(Cf9);
+            }
+            else if (alea() > 90 && alea() <= 100) {
+                collection.add(Cf10);
+            }
+        }
+
+        public static ArrayList<Carte> ajout_carte_vie(){
+            if (alea() <= 10) {
+                collection.add(Cv1);
+            }
+            else if (alea() > 10 && alea() <= 20) {
+                collection.add(Cv2);
+            }
+            else if (alea() > 20 && alea() <= 30) {
+                collection.add(Cv3);
+            }
+            else if (alea() > 30 && alea() <= 40) {
+                collection.add(Cv4);
+            }
+            else if (alea() > 40 && alea() <= 50) {
+                collection.add(Cv5);
+            }
+            else if (alea() > 50 && alea() <= 60) {
+                collection.add(Cv6);
+            }
+            else if (alea() > 60 && alea() <= 70) {
+                collection.add(Cv7);
+            }
+            else if (alea() > 70 && alea() <= 80) {
+                collection.add(Cv8);
+            }
+            else if (alea() > 80 && alea() <= 90) {
+                collection.add(Cv9);
+            }
+            else if (alea() > 90 && alea() <= 100) {
+                collection.add(Cv10);
             }
         }
 

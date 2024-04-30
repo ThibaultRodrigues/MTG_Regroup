@@ -14,34 +14,9 @@
                   <Image url="@Projet_MTG/Magic-The-Gathering.jpg" />
                </image>
             </ImageView>
-            <ImageView id="type_multi" fx:id="Multimul" fitHeight="102.0" fitWidth="102.0" layoutX="112.0" layoutY="138.0" onMouseClicked="#goToMenuRainbow" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="type_multi" fx:id="Multimul" fitHeight="102.0" fitWidth="102.0" layoutX="112.0" layoutY="149.0" onMouseClicked="#goToMenuRainbow" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Projet_MTG/type_multi.png" />
-               </image>
-            </ImageView>
-            <ImageView id="Type_lumiere" fx:id="Lumiere" fitHeight="99.0" fitWidth="96.0" layoutX="113.0" layoutY="32.0" onMouseClicked="#goToMenuLumiere" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Projet_MTG/type_lumirere.png" />
-               </image>
-            </ImageView>
-            <ImageView id="type_feu" fx:id="Eau" fitHeight="105.0" fitWidth="112.0" layoutX="35.0" layoutY="228.0" onMouseClicked="#goToMenuEau" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Projet_MTG/type_eau.png" />
-               </image>
-            </ImageView>
-            <ImageView id="type_eau" fx:id="Vie" fitHeight="122.0" fitWidth="106.0" layoutX="196.0" layoutY="231.0" onMouseClicked="#goToMenuVie" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Projet_MTG/type_vie.png" />
-               </image>
-            </ImageView>
-            <ImageView id="type_tenebre" fx:id="Tenebre" fitHeight="100.0" fitWidth="104.0" layoutX="217.0" layoutY="87.0" onMouseClicked="#goToMenuTenebre" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Projet_MTG/type_tenebre.png" />
-               </image>
-            </ImageView>
-            <ImageView id="type_vie" fx:id="Feu" fitHeight="129.0" fitWidth="95.0" layoutX="13.0" layoutY="95.0" onMouseClicked="#goToMenuFeu" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Projet_MTG/type_feu.png" />
                </image>
             </ImageView>
             <ImageView id="marche" fx:id="Marche" fitHeight="132.0" fitWidth="143.0" layoutX="543.0" layoutY="12.0" onMouseClicked="#goToMarche" pickOnBounds="true" preserveRatio="true">
@@ -54,6 +29,23 @@
                   <Image url="@Projet_MTG/collection.png" />
                </image>
             </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="150.0" layoutX="113.0" layoutY="29.0" onMouseClicked="#goToMenuLumiere" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Projet_MTG/type_lumirere.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="118.0" fitWidth="99.0" layoutX="14.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Projet_MTG/type_tenebre.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="99.0" layoutX="213.0" layoutY="100.0" onMouseClicked="#goToMenuFeu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Projet_MTG/type_feu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="113.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="113.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="MenuLumiere" prefHeight="344.0" prefWidth="680.0" visible="false">

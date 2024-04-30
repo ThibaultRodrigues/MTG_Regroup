@@ -11,111 +11,141 @@ import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.ArrayList;
 
-public class HelloController implements Initializable{
-        @FXML
-        private AnchorPane MenuVieCol;
-        @FXML
-        private AnchorPane MenuMulticolorCol;
-        @FXML
-        private AnchorPane MenuTenebreCol;
-        @FXML
-        private AnchorPane MenuEauCol;
-        @FXML
-        private AnchorPane MenuLumiereCol;
-        @FXML
-        private AnchorPane MenuFeuCol;
-        @FXML
-        private AnchorPane Menuchoix;
+public class HelloController implements Initializable {
+    @FXML
+    private AnchorPane MenuVieCol;
+    @FXML
+    private AnchorPane MenuMulticolorCol;
+    @FXML
+    private AnchorPane MenuTenebreCol;
+    @FXML
+    private AnchorPane MenuEauCol;
+    @FXML
+    private AnchorPane MenuLumiereCol;
+    @FXML
+    private AnchorPane MenuFeuCol;
+    @FXML
+    private AnchorPane Menuchoix;
 
-        @FXML
-        private  AnchorPane MenuLumiere;
+    @FXML
+    private AnchorPane MenuLumiere;
 
-        @FXML
-        private  AnchorPane MenuTenebre;
+    @FXML
+    private AnchorPane MenuTenebre;
 
-        @FXML
-        private  AnchorPane MenuVie;
+    @FXML
+    private AnchorPane MenuVie;
 
-        @FXML
-        private  AnchorPane MenuEau;
+    @FXML
+    private AnchorPane MenuEau;
 
-        @FXML
-        private  AnchorPane MenuCollection;
+    @FXML
+    private AnchorPane MenuCollection;
 
-        @FXML
-        private  AnchorPane MenuFeu;
+    @FXML
+    private AnchorPane MenuFeu;
 
-        @FXML
-        private  AnchorPane MenuMulticolor;
+    @FXML
+    private AnchorPane MenuMulticolor;
 
-        @FXML
-        private  AnchorPane MenuMarche;
+    @FXML
+    private AnchorPane MenuMarche;
 
-        @FXML
-        public void goToDebut(Event event) {
-            changeAP(Menuchoix);
-        }
-        @FXML
-        public void goToMarche(Event event) {
+    @FXML
+    public void goToDebut(Event event) {
+        changeAP(Menuchoix);
+    }
+
+    @FXML
+    public void goToMarche(Event event) {
         changeAP(MenuMarche);
     }
-        @FXML
-        public void goToMenuEau(Event event) {changeAP(MenuEau);}
-        @FXML
-        public void goToMenuFeu(Event event) {changeAP(MenuFeu);}
-        @FXML
-        public void goToMenuLumiere(Event event) {changeAP(MenuLumiere);}
-        @FXML
-        public void goToCollection(Event event) {changeAP(MenuCollection);}
-        @FXML
-        public void goToMenuTenebre(Event event) {changeAP(MenuTenebre);}
-        @FXML
-        public void goToMenuVie(Event event) {changeAP(MenuVie);}
-        @FXML
-        public void goToMenuRainbow(Event event) {changeAP(MenuMulticolor);}
 
-        // Rend visible/invisible une AnchorPane ------------------------------------------------------------------------ //
-        public void invisible(AnchorPane apCourante){apCourante.setVisible(false);return;}
-        public void visible(AnchorPane apCourante){apCourante.setVisible(true);return;}
+    @FXML
+    public void goToMenuEau(Event event) {
+        changeAP(MenuEau);
+    }
 
-        // Cache toutes les AnchorPanes --------------------------------------------------------------------------------- //
-        public void clearAll()
-        {
-            invisible(MenuMulticolorCol);
-            invisible(MenuEauCol);
-            invisible(MenuFeuCol);
-            invisible(MenuLumiereCol);
-            invisible(MenuVieCol);
-            invisible(MenuTenebreCol);
-            invisible(Menuchoix);
-            invisible(MenuLumiere);
-            invisible(MenuTenebre);
-            invisible(MenuVie);
-            invisible(MenuEau);
-            invisible(MenuFeu);
-            invisible(MenuMulticolor);
-            invisible(MenuCollection);
-            invisible(MenuMarche);
-        }
+    @FXML
+    public void goToMenuFeu(Event event) {
+        changeAP(MenuFeu);
+    }
 
-        // Change d'AnchorPane ------------------------------------------------------------------------------------------ //
-        public void changeAP(AnchorPane choice){
-            clearAll();
-            visible(choice);
-        }
+    @FXML
+    public void goToMenuLumiere(Event event) {
+        changeAP(MenuLumiere);
+    }
 
-        public void changeImageViewImg(ImageView imgView, String linkImage){
-            imgView.setImage(
-                    new Image(
-                            getClass().getResource(
-                                    "/images/"+linkImage
-                            ).toExternalForm()
-                    )
-            );
-        }
+    @FXML
+    public void goToCollection(Event event) {
+        changeAP(MenuCollection);
+    }
 
-        // Genere un nombre aleatoire entre 0 et 100. ------------------------------------------------------------------- //
-        public int alea() { return (int)(Math.random() * 101 ); } // 0 to 100
+    @FXML
+    public void goToMenuTenebre(Event event) {
+        changeAP(MenuTenebre);
+    }
+
+    @FXML
+    public void goToMenuVie(Event event) {
+        changeAP(MenuVie);
+    }
+
+    @FXML
+    public void goToMenuRainbow(Event event) {
+        changeAP(MenuMulticolor);
+    }
+
+    // Rend visible/invisible une AnchorPane ------------------------------------------------------------------------ //
+    public void invisible(AnchorPane apCourante) {
+        apCourante.setVisible(false);
+        return;
+    }
+
+    public void visible(AnchorPane apCourante) {
+        apCourante.setVisible(true);
+        return;
+    }
+
+    // Cache toutes les AnchorPanes --------------------------------------------------------------------------------- //
+    public void clearAll() {
+        invisible(MenuMulticolorCol);
+        invisible(MenuEauCol);
+        invisible(MenuFeuCol);
+        invisible(MenuLumiereCol);
+        invisible(MenuVieCol);
+        invisible(MenuTenebreCol);
+        invisible(Menuchoix);
+        invisible(MenuLumiere);
+        invisible(MenuTenebre);
+        invisible(MenuVie);
+        invisible(MenuEau);
+        invisible(MenuFeu);
+        invisible(MenuMulticolor);
+        invisible(MenuCollection);
+        invisible(MenuMarche);
+    }
+
+    // Change d'AnchorPane ------------------------------------------------------------------------------------------ //
+    public void changeAP(AnchorPane choice) {
+        clearAll();
+        visible(choice);
+    }
+
+    public void changeImageViewImg(ImageView imgView, String linkImage) {
+        imgView.setImage(
+                new Image(
+                        getClass().getResource(
+                                "/images/" + linkImage
+                        ).toExternalForm()
+                )
+        );
+    }
+
+    // Genere un nombre aleatoire entre 0 et 100. ------------------------------------------------------------------- //
+    public int alea() {
+        return (int) (Math.random() * 101);
+    } // 0 to 100
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -142,16 +172,30 @@ public class HelloController implements Initializable{
         Carte Ce9 = new Carte("éclaireuse aquavente", "bleu", "ImagesEau9.jpg", 2, 2, 20);
         Carte Ce10 = new Carte("Subtilité", "bleu", "ImagesEau10.jpg", 3, 3, 30);
 
-        Eau.add(Ce1);
-        Eau.add(Ce2);
-        Eau.add(Ce3);
-        Eau.add(Ce4);
-        Eau.add(Ce5);
-        Eau.add(Ce6);
-        Eau.add(Ce7);
-        Eau.add(Ce8);
-        Eau.add(Ce9);
-        Eau.add(Ce10);
+        Eau.add(Ce1); Eau.add(Ce2); Eau.add(Ce3); Eau.add(Ce4); Eau.add(Ce5);
+        Eau.add(Ce6); Eau.add(Ce7); Eau.add(Ce8);Eau.add(Ce9); Eau.add(Ce10);
+
+        if (alea() <= 10) {
+            collection.add(Ce1);
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Ce2);
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Ce3);
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Ce4);
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Ce5);
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Ce6);
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Ce7);
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Ce8);
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Ce9);
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Ce10);
+        }
 
         //Cartes de type Feu
 
@@ -168,16 +212,30 @@ public class HelloController implements Initializable{
         Carte Cf9 = new Carte("Choeur de feu d'obsidienne", "rouge", "ImageFeu9.png", 4, 4, 40);
         Carte Cf10 = new Carte("dragon aux ailes-miroir", "rouge", "ImageFeu10.png", 4, 5, 45);
 
-        Feu.add(Cf1);
-        Feu.add(Cf2);
-        Feu.add(Cf3);
-        Feu.add(Cf4);
-        Feu.add(Cf5);
-        Feu.add(Cf6);
-        Feu.add(Cf7);
-        Feu.add(Cf8);
-        Feu.add(Cf9);
-        Feu.add(Cf10);
+        Feu.add(Cf1); Feu.add(Cf2); Feu.add(Cf3); Feu.add(Cf4); Feu.add(Cf5);
+        Feu.add(Cf6); Feu.add(Cf7); Feu.add(Cf8); Feu.add(Cf9); Feu.add(Cf10);
+
+        if (alea() <= 10) {
+            collection.add(Cf1);
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Cf2);
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Cf3);
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Cf4);
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Cf5);
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Cf6);
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Cf7);
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Cf8);
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Cf9);
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Cf10);
+        }
 
         //Cartes de type Lumière
 
@@ -194,16 +252,30 @@ public class HelloController implements Initializable{
         Carte Cl9 = new Carte("Avacyn, ange guardien", "blanc", "ImageLu9.jpeg", 5, 4, 45);
         Carte Cl10 = new Carte("Bruna, la lumière palissante", "blanc", "ImageLu10.jpeg", 5, 7, 55);
 
-        Lumiere.add(Cl1);
-        Lumiere.add(Cl2);
-        Lumiere.add(Cl3);
-        Lumiere.add(Cl4);
-        Lumiere.add(Cl5);
-        Lumiere.add(Cl6);
-        Lumiere.add(Cl7);
-        Lumiere.add(Cl8);
-        Lumiere.add(Cl9);
-        Lumiere.add(Cl10);
+        Lumiere.add(Cl1); Lumiere.add(Cl2); Lumiere.add(Cl3); Lumiere.add(Cl4); Lumiere.add(Cl5);
+        Lumiere.add(Cl6); Lumiere.add(Cl7); Lumiere.add(Cl8); Lumiere.add(Cl9); Lumiere.add(Cl10);
+
+        if (alea() <= 10) {
+            collection.add(Cl1);
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Cl2);
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Cl3);
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Cl4);
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Cl5);
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Cl6);
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Cl7);
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Cl8);
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Cl9);
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Cl10);
+        }
 
         //Cartes de type Rainbow
 
@@ -220,16 +292,30 @@ public class HelloController implements Initializable{
         Carte Cr9 = new Carte("Frodon, hobbit audacieux", "rainbow", "ImageMul9.png", 1, 3, 20);
         Carte Cr10 = new Carte("Le Balrog,Fléau de Durin", "rainbow", "ImageMul10.png", 7, 5, 55);
 
-        Rainbow.add(Cr1);
-        Rainbow.add(Cr2);
-        Rainbow.add(Cr3);
-        Rainbow.add(Cr4);
-        Rainbow.add(Cr5);
-        Rainbow.add(Cr6);
-        Rainbow.add(Cr7);
-        Rainbow.add(Cr8);
-        Rainbow.add(Cr9);
-        Rainbow.add(Cr10);
+        Rainbow.add(Cr1); Rainbow.add(Cr2); Rainbow.add(Cr3); Rainbow.add(Cr4); Rainbow.add(Cr5);
+        Rainbow.add(Cr6); Rainbow.add(Cr7); Rainbow.add(Cr8); Rainbow.add(Cr9); Rainbow.add(Cr10);
+
+        if (alea() <= 10) {
+            collection.add(Cr1);
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Cr2);
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Cr3);
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Cr4);
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Cr5);
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Cr6);
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Cr7);
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Cr8);
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Cr9);
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Cr10);
+        }
 
         //Carte de type ténèbre
 
@@ -246,16 +332,30 @@ public class HelloController implements Initializable{
         Carte Ct9 = new Carte("Kinzu de Mornecouvent", "noire", "ImageTe9.jpg", 5, 4, 45);
         Carte Ct10 = new Carte("Paladine parjure", "noire", "ImageTe10.jpeg", 1, 1, 10);
 
-        Tenebre.add(Ct1);
-        Tenebre.add(Ct2);
-        Tenebre.add(Ct3);
-        Tenebre.add(Ct4);
-        Tenebre.add(Ct5);
-        Tenebre.add(Ct6);
-        Tenebre.add(Ct7);
-        Tenebre.add(Ct8);
-        Tenebre.add(Ct9);
-        Tenebre.add(Ct10);
+        Tenebre.add(Ct1); Tenebre.add(Ct2); Tenebre.add(Ct3); Tenebre.add(Ct4); Tenebre.add(Ct5);
+        Tenebre.add(Ct6); Tenebre.add(Ct7); Tenebre.add(Ct8); Tenebre.add(Ct9); Tenebre.add(Ct10);
+
+        if (alea() <= 10) {
+            collection.add(Ct1);
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Ct2);
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Ct3);
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Ct4);
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Ct5);
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Ct6);
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Ct7);
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Ct8);
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Ct9);
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Ct10);
+        }
 
         //Carte de type vie
 
@@ -272,214 +372,29 @@ public class HelloController implements Initializable{
         Carte Cv9 = new Carte("Rénata, appelée à la chasse", "vert", "ImagesVie9.png", 4, 3, 35);
         Carte Cv10 = new Carte("Cavalier verdoyant", "vert", "ImagesVie10.jpg", 4, 2, 30);
 
-        Vie.add(Cv1);
-        Vie.add(Cv2);
-        Vie.add(Cv3);
-        Vie.add(Cv4);
-        Vie.add(Cv5);
-        Vie.add(Cv6);
-        Vie.add(Cv7);
-        Vie.add(Cv8);
-        Vie.add(Cv9);
-        Vie.add(Cv10);
+        Vie.add(Cv1); Vie.add(Cv2); Vie.add(Cv3); Vie.add(Cv4); Vie.add(Cv5);
+        Vie.add(Cv6); Vie.add(Cv7); Vie.add(Cv8); Vie.add(Cv9); Vie.add(Cv10);
 
-        public static ArrayList<Carte> ajout_carte_rainbow() {
-            if (alea() <= 10) {
-                collection.add(Cr1);
-            }
-            else if (alea() > 10 && alea() <= 20) {
-                collection.add(Cr2);
-            }
-            else if (alea() > 20 && alea() <= 30) {
-                collection.add(Cr3);
-            }
-            else if (alea() > 30 && alea() <= 40) {
-                collection.add(Cr4);
-            }
-            else if (alea() > 40 && alea() <= 50) {
-                collection.add(Cr5);
-            }
-            else if (alea() > 50 && alea() <= 60) {
-                 collection.add(Cr6);
-            }
-            else if (alea() > 60 && alea() <= 70) {
-                collection.add(Cr7);
-            }
-            else if (alea() > 70 && alea() <= 80) {
-                collection.add(Cr8);
-            }
-            else if (alea() > 80 && alea() <= 90) {
-                collection.add(Cr9);
-            }
-            else if (alea() > 90 && alea() <= 100) {
-                collection.add(Cr10);
-            }
-        }
-
-        public static ArrayList<Carte> ajout_carte_eau() {
-            if (alea() <= 10) {
-                collection.add(Ce1);
-            }
-            else if (alea() > 10 && alea() <= 20) {
-                collection.add(Ce2);
-            }
-            else if (alea() > 20 && alea() <= 30) {
-                collection.add(Ce3);
-            }
-            else if (alea() > 30 && alea() <= 40) {
-                collection.add(Ce4);
-            }
-            else if (alea() > 40 && alea() <= 50) {
-                collection.add(Ce5);
-            }
-            else if (alea() > 50 && alea() <= 60) {
-                collection.add(Ce6);
-            }
-            else if (alea() > 60 && alea() <= 70) {
-                collection.add(Ce7);
-            }
-            else if (alea() > 70 && alea() <= 80) {
-                collection.add(Ce8);
-            }
-            else if (alea() > 80 && alea() <= 90) {
-                collection.add(Ce9);
-            }
-            else if (alea() > 90 && alea() <= 100) {
-                collection.add(Ce10);
-            }
-        }
-
-        public static ArrayList<Carte> ajout_carte_tenebre() {
-            if (alea() <= 10) {
-                collection.add(Ct1);
-            }
-            else if (alea() > 10 && alea() <= 20) {
-                collection.add(Ct2);
-            }
-            else if (alea() > 20 && alea() <= 30) {
-                collection.add(Ct3);
-            }
-            else if (alea() > 30 && alea() <= 40) {
-                collection.add(Ct4);
-            }
-            else if (alea() > 40 && alea() <= 50) {
-                collection.add(Ct5);
-            }
-            else if (alea() > 50 && alea() <= 60) {
-                collection.add(Ct6);
-            }
-            else if (alea() > 60 && alea() <= 70) {
-                collection.add(Ct7);
-            }
-            else if (alea() > 70 && alea() <= 80) {
-                collection.add(Ct8);
-            }
-            else if (alea() > 80 && alea() <= 90) {
-                collection.add(Ct9);
-            }
-            else if (alea() > 90 && alea() <= 100) {
-                collection.add(Ct10);
-            }
-        }
-
-
-        public static ArrayList<Carte> ajout_carte_lumiere() {
-            if (alea() <= 10) {
-                collection.add(Cl1);
-            }
-            else if (alea() > 10 && alea() <= 20) {
-                collection.add(Cl2);
-            }
-            else if (alea() > 20 && alea() <= 30) {
-                collection.add(Cl3);
-            }
-            else if (alea() > 30 && alea() <= 40) {
-                collection.add(Cl4);
-            }
-            else if (alea() > 40 && alea() <= 50) {
-                collection.add(Cl5);
-            }
-            else if (alea() > 50 && alea() <= 60) {
-                collection.add(Cl6);
-            }
-            else if (alea() > 60 && alea() <= 70) {
-                collection.add(Cl7);
-            }
-            else if (alea() > 70 && alea() <= 80) {
-                collection.add(Cl8);
-            }
-            else if (alea() > 80 && alea() <= 90) {
-                collection.add(Cl9);
-            }
-            else if (alea() > 90 && alea() <= 100) {
-                collection.add(Cl10);
-            }
-        }
-
-        public static ArrayList<Carte> ajout_carte_feu() {
-            if (alea() <= 10) {
-                collection.add(Cf1);
-            }
-            else if (alea() > 10 && alea() <= 20) {
-                collection.add(Cf2);
-            }
-            else if (alea() > 20 && alea() <= 30) {
-                collection.add(Cf3);
-            }
-            else if (alea() > 30 && alea() <= 40) {
-                collection.add(Cf4);
-            }
-            else if (alea() > 40 && alea() <= 50) {
-                collection.add(Cf5);
-            }
-            else if (alea() > 50 && alea() <= 60) {
-                collection.add(Cf6);
-            }
-            else if (alea() > 60 && alea() <= 70) {
-                collection.add(Cf7);
-            }
-            else if (alea() > 70 && alea() <= 80) {
-                collection.add(Cf8);
-            }
-            else if (alea() > 80 && alea() <= 90) {
-                collection.add(Cf9);
-            }
-            else if (alea() > 90 && alea() <= 100) {
-                collection.add(Cf10);
-            }
-        }
-
-        public static ArrayList<Carte> ajout_carte_vie(){
-            if (alea() <= 10) {
-                collection.add(Cv1);
-            }
-            else if (alea() > 10 && alea() <= 20) {
-                collection.add(Cv2);
-            }
-            else if (alea() > 20 && alea() <= 30) {
-                collection.add(Cv3);
-            }
-            else if (alea() > 30 && alea() <= 40) {
-                collection.add(Cv4);
-            }
-            else if (alea() > 40 && alea() <= 50) {
-                collection.add(Cv5);
-            }
-            else if (alea() > 50 && alea() <= 60) {
-                collection.add(Cv6);
-            }
-            else if (alea() > 60 && alea() <= 70) {
-                collection.add(Cv7);
-            }
-            else if (alea() > 70 && alea() <= 80) {
-                collection.add(Cv8);
-            }
-            else if (alea() > 80 && alea() <= 90) {
-                collection.add(Cv9);
-            }
-            else if (alea() > 90 && alea() <= 100) {
-                collection.add(Cv10);
-            }
+        if (alea() <= 10) {
+            collection.add(Cv1);
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Cv2);
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Cv3);
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Cv4);
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Cv5);
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Cv6);
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Cv7);
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Cv8);
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Cv9);
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Cv10);
         }
 
         //public static ArrayList<integer> {

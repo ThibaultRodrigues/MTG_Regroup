@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane prefHeight="363.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane prefHeight="363.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="siothibault.magic_regroupment.HelloController">
    <children>
       <AnchorPane fx:id="Menuchoix" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="695.0">
          <children>
@@ -14,7 +14,7 @@
                   <Image url="@Projet_MTG/Magic-The-Gathering.jpg" />
                </image>
             </ImageView>
-            <ImageView id="type_multi" fx:id="Multimul" fitHeight="102.0" fitWidth="102.0" layoutX="112.0" layoutY="138.0" onMouseClicked="#goToMenuMulti" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="type_multi" fx:id="Multimul" fitHeight="102.0" fitWidth="102.0" layoutX="112.0" layoutY="138.0" onMouseClicked="#goToMenuRainbow" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Projet_MTG/type_multi.png" />
                </image>

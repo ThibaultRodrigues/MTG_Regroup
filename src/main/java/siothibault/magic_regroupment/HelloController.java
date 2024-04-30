@@ -304,38 +304,46 @@ public class HelloController implements Initializable {
         imgView.setImage(new Image(Objects.requireNonNull(getClass().getResource("siothibault.magic_regroupment/" + linkImage)).toExternalForm()));
     }
 
+    int Inigma = 250;
+
     public void Tirage_Booster_Blanc() {
-        changeAP(Invocations);
-        if (alea() <= 10) {
-            collection.add(Cl1);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu1.jpeg");
-        } else if (alea() > 10 && alea() <= 20) {
-            collection.add(Cl2);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImagesLu2.png");
-        } else if (alea() > 20 && alea() <= 30) {
-            collection.add(Cl3);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu3.jpg");
-        } else if (alea() > 30 && alea() <= 40) {
-            collection.add(Cl4);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu.4jpeg");
-        } else if (alea() > 40 && alea() <= 50) {
-            collection.add(Cl5);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu5.png");
-        } else if (alea() > 50 && alea() <= 60) {
-            collection.add(Cl6);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu6.png");
-        } else if (alea() > 60 && alea() <= 70) {
-            collection.add(Cl7);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu7.png");
-        } else if (alea() > 70 && alea() <= 80) {
-            collection.add(Cl8);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu8.jpeg");
-        } else if (alea() > 80 && alea() <= 90) {
-            collection.add(Cl9);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu9.jpeg");
-        } else if (alea() > 90 && alea() <= 100) {
-            collection.add(Cl10);
-            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu10.jpeg");
+        Inigma = Inigma - 150;
+        if (Inigma >= 150) {
+            changeAP(Invocations);
+            if (alea() <= 10) {
+                collection.add(Cl1);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu1.jpeg");
+            } else if (alea() > 10 && alea() <= 20) {
+                collection.add(Cl2);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImagesLu2.png");
+            } else if (alea() > 20 && alea() <= 30) {
+                collection.add(Cl3);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu3.jpg");
+            } else if (alea() > 30 && alea() <= 40) {
+                collection.add(Cl4);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu.4jpeg");
+            } else if (alea() > 40 && alea() <= 50) {
+                collection.add(Cl5);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu5.png");
+            } else if (alea() > 50 && alea() <= 60) {
+                collection.add(Cl6);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu6.png");
+            } else if (alea() > 60 && alea() <= 70) {
+                collection.add(Cl7);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu7.png");
+            } else if (alea() > 70 && alea() <= 80) {
+                collection.add(Cl8);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu8.jpeg");
+            } else if (alea() > 80 && alea() <= 90) {
+                collection.add(Cl9);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu9.jpeg");
+            } else if (alea() > 90 && alea() <= 100) {
+                collection.add(Cl10);
+                changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu10.jpeg");
+            }
+        }
+        else {
+            changeAP(MenuMarche);
         }
     }
 
@@ -547,9 +555,100 @@ public class HelloController implements Initializable {
             collection.add(Cl10);
             changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Lumière/ImageLu10.jpeg");
         }
+        if (alea() <= 10) {
+            collection.add(Cr1);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul1.png");
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Cr2);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul2.png");
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Cr3);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul3.png");
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Cr4);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul4.png");
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Cr5);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul5.png");
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Cr6);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul6.png");
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Cr7);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul7.png");
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Cr8);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul8.png");
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Cl9);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul9.png");
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Cr10);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Multicolor/ImageMul10.png");
+        }
+        if (alea() <= 10) {
+            collection.add(Cv1);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie1.png");
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Cv2);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie2.png");
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Cv3);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie3.jpg");
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Cv4);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie4.png");
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Cv5);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie5.png");
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Cv6);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie6.jpg");
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Cv7);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie7.jpg");
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Cv8);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie8.jpg");
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Cv9);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie9.png");
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Cv10);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Vie/ImagesVie10.jpg");
+        }
+        if (alea() <= 10) {
+            collection.add(Cr1);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu1.png");
+        } else if (alea() > 10 && alea() <= 20) {
+            collection.add(Cr2);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu2.png");
+        } else if (alea() > 20 && alea() <= 30) {
+            collection.add(Cr3);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu3.png");
+        } else if (alea() > 30 && alea() <= 40) {
+            collection.add(Cr4);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu4.jpeg");
+        } else if (alea() > 40 && alea() <= 50) {
+            collection.add(Cr5);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu5.png");
+        } else if (alea() > 50 && alea() <= 60) {
+            collection.add(Cr6);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu6.png");
+        } else if (alea() > 60 && alea() <= 70) {
+            collection.add(Cr7);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu7.png");
+        } else if (alea() > 70 && alea() <= 80) {
+            collection.add(Cr8);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu8.png");
+        } else if (alea() > 80 && alea() <= 90) {
+            collection.add(Cr9);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu9.png");
+        } else if (alea() > 90 && alea() <= 100) {
+            collection.add(Cr10);
+            changeImageViewImg(CarteInvoquer, "siothibault/magic_regroupment/Projet_MTG/Feu/ImageFeu10.png");
+        }
     }
-
-    int Inigma = 250;
 
     //Cartes de type Eau
 

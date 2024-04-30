@@ -44,12 +44,12 @@
                   <Image url="@Projet_MTG/type_feu.png" />
                </image>
             </ImageView>
-            <ImageView id="marche" fx:id="Marche" fitHeight="132.0" fitWidth="143.0" layoutX="543.0" layoutY="12.0" onMouseClicked="#gotoMarche" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="marche" fx:id="Marche" fitHeight="132.0" fitWidth="143.0" layoutX="543.0" layoutY="12.0" onMouseClicked="#goToMarche" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Projet_MTG/Imagemarche.png" />
                </image>
             </ImageView>
-            <ImageView id="collection" fx:id="Deckbox" fitHeight="150.0" fitWidth="200.0" layoutX="556.0" layoutY="200.0" onMouseClicked="#GotoMenuCollection" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="collection" fx:id="Deckbox" fitHeight="150.0" fitWidth="200.0" layoutX="556.0" layoutY="200.0" onMouseClicked="#goToCollection" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Projet_MTG/collection.png" />
                </image>

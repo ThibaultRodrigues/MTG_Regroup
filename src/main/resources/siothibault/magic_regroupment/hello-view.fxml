@@ -466,11 +466,6 @@
                   <Image url="@../../Projet_MTG/BoosterLumiere.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="BoosterAlea" fitHeight="150.0" fitWidth="84.0" layoutX="22.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../Projet_MTG/BoosterAléatoire.png" />
-               </image>
-            </ImageView>
             <ImageView fx:id="BoosterMulti" fitHeight="150.0" fitWidth="84.0" layoutX="598.0" layoutY="212.0" onMouseClicked="#Tirage_Booster_Rainbow" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/BoosterMulticolor.png" />

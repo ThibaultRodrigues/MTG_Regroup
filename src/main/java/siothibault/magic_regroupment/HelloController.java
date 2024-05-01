@@ -13,6 +13,7 @@ import java.util.ResourceBundle;
 import java.util.ArrayList;
 
 public class HelloController implements Initializable {
+    ArrayList<Carte> Machine = new ArrayList<>();
     ArrayList<Carte> Feu = new ArrayList<>();
     ArrayList<Carte> Eau = new ArrayList<>();
     ArrayList<Carte> Tenebre = new ArrayList<>();
@@ -265,6 +266,10 @@ public class HelloController implements Initializable {
     }
     public int alea_Tirage() {
         return (int) (Math.random() * 10);
+    }
+
+    public int alea_Tirecarte() {
+        return (int) (Math.random() * 60);
     } // 0 to 100
 
     // Rend visible/invisible une AnchorPane ------------------------------------------------------------------------ //
@@ -313,6 +318,10 @@ public class HelloController implements Initializable {
     }
 
     int Inigma = 100;
+
+    ///public void CombatMachine(){
+
+    ///}
 
     public void Tirage_Booster_Blanc() {
         if (Inigma >= 30) {
@@ -588,6 +597,69 @@ public class HelloController implements Initializable {
         Lumiere.add(Cl8);
         Lumiere.add(Cl9);
         Lumiere.add(Cl10);
+
+        //Main de la machine :
+
+        Machine.add(Cf1);
+        Machine.add(Cf2);
+        Machine.add(Cf3);
+        Machine.add(Cf4);
+        Machine.add(Cf5);
+        Machine.add(Cf6);
+        Machine.add(Cf7);
+        Machine.add(Cf8);
+        Machine.add(Cf9);
+        Machine.add(Cf10);
+        Machine.add(Ct1);
+        Machine.add(Ct2);
+        Machine.add(Ct3);
+        Machine.add(Ct4);
+        Machine.add(Ct5);
+        Machine.add(Ct6);
+        Machine.add(Ct7);
+        Machine.add(Ct8);
+        Machine.add(Ct9);
+        Machine.add(Ct10);
+        Machine.add(Cr1);
+        Machine.add(Cr2);
+        Machine.add(Cr3);
+        Machine.add(Cr4);
+        Machine.add(Cr5);
+        Machine.add(Cr6);
+        Machine.add(Cr7);
+        Machine.add(Cr8);
+        Machine.add(Cr9);
+        Machine.add(Cr10);
+        Machine.add(Ce1);
+        Machine.add(Ce2);
+        Machine.add(Ce3);
+        Machine.add(Ce4);
+        Machine.add(Ce5);
+        Machine.add(Ce6);
+        Machine.add(Ce7);
+        Machine.add(Ce8);
+        Machine.add(Ce9);
+        Machine.add(Ce10);
+        Machine.add(Cv1);
+        Machine.add(Cv2);
+        Machine.add(Cv3);
+        Machine.add(Cv4);
+        Machine.add(Cv5);
+        Machine.add(Cv6);
+        Machine.add(Cv7);
+        Machine.add(Cv8);
+        Machine.add(Cv9);
+        Machine.add(Cv10);
+        Machine.add(Cl1);
+        Machine.add(Cl2);
+        Machine.add(Cl3);
+        Machine.add(Cl4);
+        Machine.add(Cl5);
+        Machine.add(Cl6);
+        Machine.add(Cl7);
+        Machine.add(Cl8);
+        Machine.add(Cl9);
+        Machine.add(Cl10);
 
         collection.add(Lumiere.get(alea_liste()));
 

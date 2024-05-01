@@ -470,6 +470,13 @@ public class HelloController implements Initializable {
         }
     }
 
+    //public void verif_col_eau() {
+        //for (int i = 1; i <= Eaucol.size(); i++) {
+            //String ImageView = "ColEau" + i;
+            //changeImageViewImg(imageView, Eaucol.get(i - 1).getImage());
+        //}
+    //}
+
     //Cartes de type Eau
 
     Carte Ce1 = new Carte("le Guetteur de l eau", "bleu", "Eau/ImagesEau1.jpg", 9, 9, 70);
@@ -686,6 +693,8 @@ public class HelloController implements Initializable {
         Machine.add(Cl9);
         Machine.add(Cl10);
 
+        //Commencement du joueurs :
+
         collection.add(Lumiere.get(alea_liste()));
         Lumierecol.add(Lumiere.get(alea_liste()));
 
@@ -703,5 +712,7 @@ public class HelloController implements Initializable {
 
         collection.add(Rainbow.get(alea_liste()));
         Rainbowcol.add(Feu.get(alea_liste()));
+
+
     }
 }

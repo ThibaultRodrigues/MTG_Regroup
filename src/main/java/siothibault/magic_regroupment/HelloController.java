@@ -262,10 +262,10 @@ public class HelloController implements Initializable {
         changeAP(MenuMulticolor);
     }
     public int alea_liste(){
-        return (int) (Math.random()*10);
+        return (int) (Math.random()*9);
     }
     public int alea_Tirage() {
-        return (int) (Math.random() * 10);
+        return (int) (Math.random() * 9);
     }
 
     public int alea_Tirecarte() {
@@ -325,7 +325,7 @@ public class HelloController implements Initializable {
 
     public void Tirage_Booster_Blanc() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 150;
+            Inigma = Inigma - 30;
             changeAP(Invocations);
             for (int i = 0 ; i < collection.size() ; i++ ){
                 if (Lumiere.get(alea_Tirage()) == collection.get(i)){
@@ -346,7 +346,7 @@ public class HelloController implements Initializable {
 
     public void Tirage_Booster_Bleu() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 150;
+            Inigma = Inigma - 30;
             changeAP(Invocations);
             for (int i = 0 ; i < collection.size() ; i++ ){
                 if (Eau.get(alea_Tirage()) == collection.get(i)){
@@ -366,7 +366,7 @@ public class HelloController implements Initializable {
 
     public void Tirage_Booster_Noir() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 150;
+            Inigma = Inigma - 30;
             changeAP(Invocations);
             for (int i = 0 ; i < collection.size() ; i++ ){
                 if (Tenebre.get(alea_Tirage()) == collection.get(i)){
@@ -387,7 +387,7 @@ public class HelloController implements Initializable {
 
     public void Tirage_Booster_Rouge() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 150;
+            Inigma = Inigma - 30;
             changeAP(Invocations);
             for (int i = 0 ; i < collection.size() ; i++ ){
                 if (Feu.get(alea_Tirage()) == collection.get(i)){
@@ -407,7 +407,7 @@ public class HelloController implements Initializable {
 
     public void Tirage_Booster_Vert() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 150;
+            Inigma = Inigma - 30;
             changeAP(Invocations);
             for (int i = 0 ; i < collection.size() ; i++ ){
                 if (Vie.get(alea_Tirage()) == collection.get(i)){
@@ -427,7 +427,7 @@ public class HelloController implements Initializable {
 
     public void Tirage_Booster_Rainbow() {
         if (Inigma >= 80) {
-            Inigma = Inigma - 150;
+            Inigma = Inigma - 80;
             changeAP(Invocations);
             for (int i = 0 ; i < collection.size() ; i++ ){
                 if (Rainbow.get(alea_Tirage()) == collection.get(i)){

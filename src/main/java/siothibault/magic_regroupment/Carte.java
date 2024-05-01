@@ -18,6 +18,9 @@ public class Carte {
         this.prix = prix;
     }
 
+    public String toString(){
+        return this.img;
+    }
     public String getName() {
         return this.name;
     }

@@ -13,6 +13,13 @@ import java.util.ResourceBundle;
 import java.util.ArrayList;
 
 public class HelloController implements Initializable {
+    ArrayList<Carte> Feu = new ArrayList<>();
+    ArrayList<Carte> Eau = new ArrayList<>();
+    ArrayList<Carte> Tenebre = new ArrayList<>();
+    ArrayList<Carte> Vie = new ArrayList<>();
+    ArrayList<Carte> Lumiere = new ArrayList<>();
+    ArrayList<Carte> Rainbow = new ArrayList<>();
+
     @FXML
     private AnchorPane MenuVieCol;
     @FXML
@@ -430,9 +437,6 @@ public class HelloController implements Initializable {
 
     //Cartes de type Eau
 
-    @FXML
-    ArrayList<Carte> Eau = new ArrayList<>();
-
     Carte Ce1 = new Carte("le Guetteur de l eau", "bleu", "Eau/ImagesEau1.jpg", 9, 9, 70);
     Carte Ce2 = new Carte("Naida des eaux sombres", "bleu", "Eau/ImagesEau2.jpg", 2, 2, 15);
     Carte Ce3 = new Carte("élemental de marée", "bleu", "Eau/ImagesEau3.jpg", 0, 4, 20);
@@ -446,7 +450,6 @@ public class HelloController implements Initializable {
 
     //Cartes de type Feu
 
-    ArrayList<Carte> Feu = new ArrayList<>();
 
     Carte Cf1 = new Carte("Olifant", "rouge", "Feu/ImageFeu1.png", 6, 4, 50);
     Carte Cf2 = new Carte("Eomer,Marshal of Rohan", "rouge", "Feu/ImageFeu2.png", 4, 4, 40);
@@ -460,9 +463,6 @@ public class HelloController implements Initializable {
     Carte Cf10 = new Carte("dragon aux ailes-miroir", "rouge", "Feu/ImageFeu10.png", 4, 5, 45);
 
     //Cartes de type Lumière
-
-    @FXML
-    ArrayList<Carte> Lumiere = new ArrayList<>();
 
     Carte Cl1 = new Carte("Griffon d'abbaye", "blanc", "Lumiere/ImageLu1.jpeg", 2, 2, 20);
     Carte Cl2 = new Carte("Lamasu Absoluteur", "blanc", "Lumiere/ImageLu2.png", 4, 3, 35);
@@ -478,8 +478,6 @@ public class HelloController implements Initializable {
 
     //Cartes de type Rainbow
 
-    ArrayList<Carte> Rainbow = new ArrayList<>();
-
     Carte Cr1 = new Carte("Aragorn, L'unificateur", "rainbow", "Multicolor/ImageMul1.png", 5, 5, 50);
     Carte Cr2 = new Carte("Saruman le multicolor", "rainbow", "Multicolor/ImageMul2.png", 5, 4, 45);
     Carte Cr3 = new Carte("Sauron,le seigneur ténébreux", "rainbow", "Multicolor/ImageMul3.png", 7, 6, 65);
@@ -492,8 +490,6 @@ public class HelloController implements Initializable {
     Carte Cr10 = new Carte("Le Balrog,Fléau de Durin", "rainbow", "Multicolor/ImageMul10.png", 7, 5, 55);
 
     //Carte de type ténèbre
-
-    ArrayList<Carte> Tenebre = new ArrayList<>();
 
     Carte Ct1 = new Carte("Démon de tourmental", "noire", "Tenebre/ImageTe1.png", 4, 5, 45);
     Carte Ct2 = new Carte("Chirurgien des ténèbres", "noire", "Tenebre/ImageTe2.jpg", 2, 1, 25);
@@ -508,8 +504,6 @@ public class HelloController implements Initializable {
 
 
     //Carte de type vie
-
-    ArrayList<Carte> Vie = new ArrayList<>();
 
     Carte Cv1 = new Carte("Dragon vert", "vert", "Vie/ImagesVie1.png", 4, 4, 40);
     Carte Cv2 = new Carte("La vieille Ronge-Os", "vert", "Vie/ImagesVie2.png", 7, 7, 55);

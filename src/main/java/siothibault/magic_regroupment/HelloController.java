@@ -323,6 +323,7 @@ public class HelloController implements Initializable {
                     Inigma += collection.get(i).getPrix();
                 }
                 else {
+                    System.out.println(Feu);
                     changeImageViewImg(CarteInvoquer,Lumiere.get(i).getImage());
                     collection.add(Lumiere.get(alea_Tirage()));
                 }
@@ -447,6 +448,7 @@ public class HelloController implements Initializable {
     Carte Ce8 = new Carte("Niblis de gel", "bleu", "Eau/ImagesEau8.jpg", 3, 3, 30);
     Carte Ce9 = new Carte("éclaireuse aquavente", "bleu", "Eau/ImagesEau9.jpg", 2, 2, 20);
     Carte Ce10 = new Carte("Subtilité", "bleu", "Eau/ImagesEau10.jpg", 3, 3, 30);
+
 
     //Cartes de type Feu
 

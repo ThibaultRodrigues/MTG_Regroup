@@ -10,6 +10,12 @@ public class Carte {
 
 
     public Carte(String name, String color, String img, int force, int defense,int prix) {
+        this.name = name;
+        this.color = color;
+        this.img = img;
+        this.force = force;
+        this.defense = defense;
+        this.prix = prix;
     }
 
     public String getName() {

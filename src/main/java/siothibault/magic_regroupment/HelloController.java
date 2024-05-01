@@ -20,6 +20,12 @@ public class HelloController implements Initializable {
     ArrayList<Carte> Vie = new ArrayList<>();
     ArrayList<Carte> Lumiere = new ArrayList<>();
     ArrayList<Carte> Rainbow = new ArrayList<>();
+    ArrayList<Carte> Feucol = new ArrayList<>();
+    ArrayList<Carte> Eaucol = new ArrayList<>();
+    ArrayList<Carte> Tenebrecol = new ArrayList<>();
+    ArrayList<Carte> Viecol = new ArrayList<>();
+    ArrayList<Carte> Lumierecol = new ArrayList<>();
+    ArrayList<Carte> Rainbowcol = new ArrayList<>();
 
     @FXML
     private AnchorPane MenuVieCol;
@@ -336,6 +342,7 @@ public class HelloController implements Initializable {
             } else {
                 changeImageViewImg(CarteInvoquer, carteTiree.getImage());
                 collection.add(carteTiree);
+                Lumierecol.add(carteTiree);
             }
         } else {
             changeAP(MenuMarche);
@@ -359,6 +366,7 @@ public class HelloController implements Initializable {
             } else {
                 changeImageViewImg(CarteInvoquer, carteTiree.getImage());
                 collection.add(carteTiree);
+                Eaucol.add(carteTiree);
             }
         } else {
             changeAP(MenuMarche);
@@ -382,6 +390,7 @@ public class HelloController implements Initializable {
             } else {
                 changeImageViewImg(CarteInvoquer, carteTiree.getImage());
                 collection.add(carteTiree);
+                Tenebrecol.add(carteTiree);
             }
         } else {
             changeAP(MenuMarche);
@@ -406,6 +415,7 @@ public class HelloController implements Initializable {
             } else {
                 changeImageViewImg(CarteInvoquer, carteTiree.getImage());
                 collection.add(carteTiree);
+                Feucol.add(carteTiree);
             }
         } else {
             changeAP(MenuMarche);
@@ -429,6 +439,7 @@ public class HelloController implements Initializable {
             } else {
                 changeImageViewImg(CarteInvoquer, carteTiree.getImage());
                 collection.add(carteTiree);
+                Viecol.add(carteTiree);
             }
         } else {
             changeAP(MenuMarche);
@@ -452,6 +463,7 @@ public class HelloController implements Initializable {
             } else {
                 changeImageViewImg(CarteInvoquer, carteTiree.getImage());
                 collection.add(carteTiree);
+                Rainbowcol.add(carteTiree);
             }
         } else {
             changeAP(MenuMarche);
@@ -675,15 +687,21 @@ public class HelloController implements Initializable {
         Machine.add(Cl10);
 
         collection.add(Lumiere.get(alea_liste()));
+        Lumierecol.add(Lumiere.get(alea_liste()));
 
         collection.add(Feu.get(alea_liste()));
+        Feucol.add(Feu.get(alea_liste()));
 
         collection.add(Eau.get(alea_liste()));
+        Eaucol.add(Feu.get(alea_liste()));
 
         collection.add(Tenebre.get(alea_liste()));
+        Tenebrecol.add(Feu.get(alea_liste()));
 
         collection.add(Vie.get(alea_liste()));
+        Viecol.add(Feu.get(alea_liste()));
 
         collection.add(Rainbow.get(alea_liste()));
+        Rainbowcol.add(Feu.get(alea_liste()));
     }
 }

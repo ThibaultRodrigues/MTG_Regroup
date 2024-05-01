@@ -332,7 +332,7 @@ public class HelloController implements Initializable {
                     Inigma += collection.get(i).getPrix();
                 }
                 else {
-                    System.out.println(Feu);
+                    System.out.println(Lumiere);
                     changeImageViewImg(CarteInvoquer,Lumiere.get(i).getImage());
                     collection.add(Lumiere.get(alea_Tirage()));
                 }

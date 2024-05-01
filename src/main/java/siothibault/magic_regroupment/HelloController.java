@@ -262,15 +262,11 @@ public class HelloController implements Initializable {
         changeAP(MenuMulticolor);
     }
     public int alea_liste(){
-        return (int) (Math.random()*9);
+        int Max = 9; int Min = 0;return (int) (Math.random() * ((Max - Min) + 1));
     }
     public int alea_Tirage() {
-        return (int) (Math.random() * 9);
+        int Max = 9; int Min = 0;return (int) (Math.random() * ((Max - Min) + 1));
     }
-
-    public int alea_Tirecarte() {
-        return (int) (Math.random() * 60);
-    } // 0 to 100
 
     // Rend visible/invisible une AnchorPane ------------------------------------------------------------------------ //
     public void invisible(AnchorPane apCourante) {
@@ -325,124 +321,141 @@ public class HelloController implements Initializable {
 
     public void Tirage_Booster_Blanc() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 30;
+            Inigma -= 30;
             changeAP(Invocations);
-            for (int i = 0 ; i < collection.size() ; i++ ){
-                if (Lumiere.get(alea_Tirage()) == collection.get(i)){
-                    Inigma += collection.get(i).getPrix();
-                }
-                else {
-                    System.out.println(Lumiere);
-                    changeImageViewImg(CarteInvoquer,Lumiere.get(i).getImage());
-                    collection.add(Lumiere.get(alea_Tirage()));
+            Carte carteTiree = Lumiere.get(alea_Tirage());
+            boolean carteDejaDansCollection = false;
+            for (Carte carte : collection) {
+                if (carte.equals(carteTiree)) {
+                    carteDejaDansCollection = true;
+                    break;
                 }
             }
-        }
-        else {
+            if (carteDejaDansCollection) {
+                Inigma += carteTiree.getPrix();
+            } else {
+                changeImageViewImg(CarteInvoquer, carteTiree.getImage());
+                collection.add(carteTiree);
+            }
+        } else {
             changeAP(MenuMarche);
         }
-
     }
 
     public void Tirage_Booster_Bleu() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 30;
+            Inigma -= 30;
             changeAP(Invocations);
-            for (int i = 0 ; i < collection.size() ; i++ ){
-                if (Eau.get(alea_Tirage()) == collection.get(i)){
-                    Inigma += collection.get(i).getPrix();
-                }
-                else {
-                    changeImageViewImg(CarteInvoquer,Eau.get(i).getImage());
-                    collection.add(Eau.get(alea_Tirage()));
+            Carte carteTiree = Eau.get(alea_Tirage());
+            boolean carteDejaDansCollection = false;
+            for (Carte carte : collection) {
+                if (carte.equals(carteTiree)) {
+                    carteDejaDansCollection = true;
+                    break;
                 }
             }
-        }
-        else {
+            if (carteDejaDansCollection) {
+                Inigma += carteTiree.getPrix();
+            } else {
+                changeImageViewImg(CarteInvoquer, carteTiree.getImage());
+                collection.add(carteTiree);
+            }
+        } else {
             changeAP(MenuMarche);
         }
-
     }
 
     public void Tirage_Booster_Noir() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 30;
+            Inigma -= 30;
             changeAP(Invocations);
-            for (int i = 0 ; i < collection.size() ; i++ ){
-                if (Tenebre.get(alea_Tirage()) == collection.get(i)){
-                    Inigma += collection.get(i).getPrix();
-                }
-                else {
-                    changeImageViewImg(CarteInvoquer,Tenebre.get(i).getImage());
-                    collection.add(Tenebre.get(alea_Tirage()));
+            Carte carteTiree = Tenebre.get(alea_Tirage());
+            boolean carteDejaDansCollection = false;
+            for (Carte carte : collection) {
+                if (carte.equals(carteTiree)) {
+                    carteDejaDansCollection = true;
+                    break;
                 }
             }
-        }
-        else {
+            if (carteDejaDansCollection) {
+                Inigma += carteTiree.getPrix();
+            } else {
+                changeImageViewImg(CarteInvoquer, carteTiree.getImage());
+                collection.add(carteTiree);
+            }
+        } else {
             changeAP(MenuMarche);
         }
-
     }
 
 
     public void Tirage_Booster_Rouge() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 30;
+            Inigma -= 30;
             changeAP(Invocations);
-            for (int i = 0 ; i < collection.size() ; i++ ){
-                if (Feu.get(alea_Tirage()) == collection.get(i)){
-                    Inigma += collection.get(i).getPrix();
-                }
-                else {
-                    changeImageViewImg(CarteInvoquer,Feu.get(i).getImage());
-                    collection.add(Feu.get(alea_Tirage()));
+            Carte carteTiree = Feu.get(alea_Tirage());
+            boolean carteDejaDansCollection = false;
+            for (Carte carte : collection) {
+                if (carte.equals(carteTiree)) {
+                    carteDejaDansCollection = true;
+                    break;
                 }
             }
-        }
-        else {
+            if (carteDejaDansCollection) {
+                Inigma += carteTiree.getPrix();
+            } else {
+                changeImageViewImg(CarteInvoquer, carteTiree.getImage());
+                collection.add(carteTiree);
+            }
+        } else {
             changeAP(MenuMarche);
         }
-
     }
 
     public void Tirage_Booster_Vert() {
         if (Inigma >= 30) {
-            Inigma = Inigma - 30;
+            Inigma -= 30;
             changeAP(Invocations);
-            for (int i = 0 ; i < collection.size() ; i++ ){
-                if (Vie.get(alea_Tirage()) == collection.get(i)){
-                    Inigma += collection.get(i).getPrix();
-                }
-                else {
-                    changeImageViewImg(CarteInvoquer,Vie.get(i).getImage());
-                    collection.add(Vie.get(alea_Tirage()));
+            Carte carteTiree = Vie.get(alea_Tirage());
+            boolean carteDejaDansCollection = false;
+            for (Carte carte : collection) {
+                if (carte.equals(carteTiree)) {
+                    carteDejaDansCollection = true;
+                    break;
                 }
             }
-        }
-        else {
+            if (carteDejaDansCollection) {
+                Inigma += carteTiree.getPrix();
+            } else {
+                changeImageViewImg(CarteInvoquer, carteTiree.getImage());
+                collection.add(carteTiree);
+            }
+        } else {
             changeAP(MenuMarche);
         }
-
     }
 
     public void Tirage_Booster_Rainbow() {
-        if (Inigma >= 80) {
-            Inigma = Inigma - 80;
+        if (Inigma >= 30) {
+            Inigma -= 30;
             changeAP(Invocations);
-            for (int i = 0 ; i < collection.size() ; i++ ){
-                if (Rainbow.get(alea_Tirage()) == collection.get(i)){
-                    Inigma += collection.get(i).getPrix();
-                }
-                else {
-                    changeImageViewImg(CarteInvoquer,Rainbow.get(i).getImage());
-                    collection.add(Rainbow.get(alea_Tirage()));
+            Carte carteTiree = Rainbow.get(alea_Tirage());
+            boolean carteDejaDansCollection = false;
+            for (Carte carte : collection) {
+                if (carte.equals(carteTiree)) {
+                    carteDejaDansCollection = true;
+                    break;
                 }
             }
-        }
-        else {
+            if (carteDejaDansCollection) {
+                Inigma += carteTiree.getPrix();
+            } else {
+                changeImageViewImg(CarteInvoquer, carteTiree.getImage());
+                collection.add(carteTiree);
+            }
+        } else {
             changeAP(MenuMarche);
         }
-
     }
 
     //Cartes de type Eau

@@ -253,9 +253,11 @@ public class HelloController implements Initializable {
     public void goToMenuRainbow(Event event) {
         changeAP(MenuMulticolor);
     }
-
+    public int alea_liste(){
+        return (int) (Math.random()*10);
+    }
     public int alea_Tirage() {
-        return (int) (Math.random() * 11);
+        return (int) (Math.random() * 10);
     } // 0 to 100
 
     // Rend visible/invisible une AnchorPane ------------------------------------------------------------------------ //
@@ -293,11 +295,14 @@ public class HelloController implements Initializable {
         visible(choice);
     }
 
-    public void changeImageViewImg(ImageView imgView, String linkImage) {
-        imgView.setImage(new Image(
-                getClass().getResource(
-                                "Images" + linkImage)
-                        .toExternalForm()));
+    public void changeImageViewImg(ImageView imgView, String linkImage){
+        imgView.setImage(
+                new Image(
+                        getClass().getResource(
+                                "/Projet_MTG/"+linkImage
+                        ).toExternalForm()
+                )
+        );
     }
 
     int Inigma = 100;
@@ -428,94 +433,94 @@ public class HelloController implements Initializable {
     @FXML
     ArrayList<Carte> Eau = new ArrayList<>();
 
-    Carte Ce1 = new Carte("le Guetteur de l eau", "bleu", "CarteEau/ImagesEau1.jpg", 9, 9, 70);
-    Carte Ce2 = new Carte("Naida des eaux sombres", "bleu", "CarteEau/ImagesEau2.jpg", 2, 2, 15);
-    Carte Ce3 = new Carte("élemental de marée", "bleu", "CarteEau/ImagesEau3.jpg", 0, 4, 20);
-    Carte Ce4 = new Carte("sage des cascades", "bleu", "CarteEau/ImagesEau4.jpg", 2, 5, 35);
-    Carte Ce5 = new Carte("Djinn Scribeciel", "bleu", "CarteEau/ImagesEau5.jpg", 3, 4, 35);
-    Carte Ce6 = new Carte("Ondin des coraux", "bleu", "CarteEau/ImagesEau6.jpg", 2, 1, 10);
-    Carte Ce7 = new Carte("Oracle des fonds marins", "bleu", "CarteEau/ImagesEau7.jpg", 2, 3, 25);
-    Carte Ce8 = new Carte("Niblis de gel", "bleu", "CarteEau/ImagesEau8.jpg", 3, 3, 30);
-    Carte Ce9 = new Carte("éclaireuse aquavente", "bleu", "CarteEau/ImagesEau9.jpg", 2, 2, 20);
-    Carte Ce10 = new Carte("Subtilité", "bleu", "CarteEau/ImagesEau10.jpg", 3, 3, 30);
+    Carte Ce1 = new Carte("le Guetteur de l eau", "bleu", "Eau/ImagesEau1.jpg", 9, 9, 70);
+    Carte Ce2 = new Carte("Naida des eaux sombres", "bleu", "Eau/ImagesEau2.jpg", 2, 2, 15);
+    Carte Ce3 = new Carte("élemental de marée", "bleu", "Eau/ImagesEau3.jpg", 0, 4, 20);
+    Carte Ce4 = new Carte("sage des cascades", "bleu", "Eau/ImagesEau4.jpg", 2, 5, 35);
+    Carte Ce5 = new Carte("Djinn Scribeciel", "bleu", "Eau/ImagesEau5.jpg", 3, 4, 35);
+    Carte Ce6 = new Carte("Ondin des coraux", "bleu", "Eau/ImagesEau6.jpg", 2, 1, 10);
+    Carte Ce7 = new Carte("Oracle des fonds marins", "bleu", "Eau/ImagesEau7.jpg", 2, 3, 25);
+    Carte Ce8 = new Carte("Niblis de gel", "bleu", "Eau/ImagesEau8.jpg", 3, 3, 30);
+    Carte Ce9 = new Carte("éclaireuse aquavente", "bleu", "Eau/ImagesEau9.jpg", 2, 2, 20);
+    Carte Ce10 = new Carte("Subtilité", "bleu", "Eau/ImagesEau10.jpg", 3, 3, 30);
 
     //Cartes de type Feu
 
     ArrayList<Carte> Feu = new ArrayList<>();
 
-    Carte Cf1 = new Carte("Olifant", "rouge", "Images/CarteFeu/ImageFeu1.png", 6, 4, 50);
-    Carte Cf2 = new Carte("Eomer,Marshal of Rohan", "rouge", "Images/CarteFeu/ImageFeu2.png", 4, 4, 40);
-    Carte Cf3 = new Carte("Servant de Feu", "rouge", "Images/CarteFeu/ImageFeu3.png", 4, 3, 35);
-    Carte Cf4 = new Carte("Drakuseth,Gueule de Flammes", "rouge", "Images/CarteFeu/ImageFeu4.png", 7, 7, 60);
-    Carte Cf5 = new Carte("Zalto,duc des géants de feu", "rouge", "Images/CarteFeu/ImageFeu5.png", 7, 3, 50);
-    Carte Cf6 = new Carte("Rionya,danseuse du feu", "rouge", "Images/CarteFeu/ImageFeu6.png", 3, 4, 35);
-    Carte Cf7 = new Carte("Solphim,Dominus du chaos", "rouge", "Images/CarteFeu/ImageFeu7.png", 5, 4, 45);
-    Carte Cf8 = new Carte("Chandra,feu de Kaladesh", "rouge", "Images/CarteFeu/ImageFeu8.png", 2, 2, 20);
-    Carte Cf9 = new Carte("Choeur de feu d'obsidienne", "rouge", "Images/CarteFeu/ImageFeu9.png", 4, 4, 40);
-    Carte Cf10 = new Carte("dragon aux ailes-miroir", "rouge", "Images/CarteFeu/ImageFeu10.png", 4, 5, 45);
+    Carte Cf1 = new Carte("Olifant", "rouge", "Feu/ImageFeu1.png", 6, 4, 50);
+    Carte Cf2 = new Carte("Eomer,Marshal of Rohan", "rouge", "Feu/ImageFeu2.png", 4, 4, 40);
+    Carte Cf3 = new Carte("Servant de Feu", "rouge", "Feu/ImageFeu3.png", 4, 3, 35);
+    Carte Cf4 = new Carte("Drakuseth,Gueule de Flammes", "rouge", "Feu/ImageFeu4.png", 7, 7, 60);
+    Carte Cf5 = new Carte("Zalto,duc des géants de feu", "rouge", "Feu/ImageFeu5.png", 7, 3, 50);
+    Carte Cf6 = new Carte("Rionya,danseuse du feu", "rouge", "Feu/ImageFeu6.png", 3, 4, 35);
+    Carte Cf7 = new Carte("Solphim,Dominus du chaos", "rouge", "Feu/ImageFeu7.png", 5, 4, 45);
+    Carte Cf8 = new Carte("Chandra,feu de Kaladesh", "rouge", "Feu/ImageFeu8.png", 2, 2, 20);
+    Carte Cf9 = new Carte("Choeur de feu d'obsidienne", "rouge", "Feu/ImageFeu9.png", 4, 4, 40);
+    Carte Cf10 = new Carte("dragon aux ailes-miroir", "rouge", "Feu/ImageFeu10.png", 4, 5, 45);
 
     //Cartes de type Lumière
 
     @FXML
     ArrayList<Carte> Lumiere = new ArrayList<>();
 
-    Carte Cl1 = new Carte("Griffon d'abbaye", "blanc", "CarteLumiere/ImageLu1.jpeg", 2, 2, 20);
-    Carte Cl2 = new Carte("Lamasu Absoluteur", "blanc", "CarteLumiere/ImageLu2.png", 4, 3, 35);
-    Carte Cl3 = new Carte("Iona, Bouclier d'Emeria", "blanc", "CarteLumiere/ImageLu3.jpg", 7, 7, 60);
-    Carte Cl4 = new Carte("paladin des accordeurs", "blanc", "CarteLumiere/ImageLu4.jpeg", 3, 1, 20);
-    Carte Cl5 = new Carte("Gandalf,cavalier blanc", "blanc", "CarteLumiere/ImageLu5.png", 3, 3, 30);
-    Carte Cl6 = new Carte("Conquérant Charismatique", "blanc", "CarteLumiere/ImageLu6.png", 2, 2, 20);
-    Carte Cl7 = new Carte("Consécratrice du courage", "blanc", "CarteLumiere/ImageLu7.png", 3, 5, 40);
-    Carte Cl8 = new Carte("Gisela la lame brisée", "blanc", "CarteLumiere/ImageLu8.jpeg", 4, 3, 35);
-    Carte Cl9 = new Carte("Avacyn, ange guardien", "blanc", "CarteLumiere/ImageLu9.jpeg", 5, 4, 45);
-    Carte Cl10 = new Carte("Bruna, la lumière palissante", "blanc", "CarteLumiere/ImageLu10.jpeg", 5, 7, 55);
+    Carte Cl1 = new Carte("Griffon d'abbaye", "blanc", "Lumiere/ImageLu1.jpeg", 2, 2, 20);
+    Carte Cl2 = new Carte("Lamasu Absoluteur", "blanc", "Lumiere/ImageLu2.png", 4, 3, 35);
+    Carte Cl3 = new Carte("Iona, Bouclier d'Emeria", "blanc", "Lumiere/ImageLu3.jpg", 7, 7, 60);
+    Carte Cl4 = new Carte("paladin des accordeurs", "blanc", "Lumiere/ImageLu4.jpeg", 3, 1, 20);
+    Carte Cl5 = new Carte("Gandalf,cavalier blanc", "blanc", "Lumiere/ImageLu5.png", 3, 3, 30);
+    Carte Cl6 = new Carte("Conquérant Charismatique", "blanc", "Lumiere/ImageLu6.png", 2, 2, 20);
+    Carte Cl7 = new Carte("Consécratrice du courage", "blanc", "Lumiere/ImageLu7.png", 3, 5, 40);
+    Carte Cl8 = new Carte("Gisela la lame brisée", "blanc", "Lumiere/ImageLu8.jpeg", 4, 3, 35);
+    Carte Cl9 = new Carte("Avacyn, ange guardien", "blanc", "Lumiere/ImageLu9.jpeg", 5, 4, 45);
+    Carte Cl10 = new Carte("Bruna, la lumière palissante", "blanc", "Lumiere/ImageLu10.jpeg", 5, 7, 55);
 
 
     //Cartes de type Rainbow
 
     ArrayList<Carte> Rainbow = new ArrayList<>();
 
-    Carte Cr1 = new Carte("Aragorn, L'unificateur", "rainbow", "Images/CarteMulticolor/ImageMul1.png", 5, 5, 50);
-    Carte Cr2 = new Carte("Saruman le multicolor", "rainbow", "Images/CarteMulticolor/ImageMul2.png", 5, 4, 45);
-    Carte Cr3 = new Carte("Sauron,le seigneur ténébreux", "rainbow", "Images/CarteMulticolor/ImageMul3.png", 7, 6, 65);
-    Carte Cr4 = new Carte("Eowyn, la vierge Guerrière", "rainbow", "Images/CarteMulticolor/ImageMul4.png", 5, 4, 45);
-    Carte Cr5 = new Carte("Gandalf le gris", "rainbow", "Images/CarteMulticolor/ImageMul5.png", 3, 4, 35);
-    Carte Cr6 = new Carte("Aragorn et Arwen,époux", "rainbow", "Images/CarteMulticolor/ImageMul6.png", 3, 6, 45);
-    Carte Cr7 = new Carte("Arachne, fille d'Ungoliant", "rainbow", "Images/CarteMulticolor/ImageMul7.png", 8, 8, 70);
-    Carte Cr8 = new Carte("Arwen, reine mortelle", "rainbow", "Images/CarteMulticolor/ImageMul8.png", 2, 2, 20);
-    Carte Cr9 = new Carte("Frodon, hobbit audacieux", "rainbow", "Images/CarteMulticolor/ImageMul9.png", 1, 3, 20);
-    Carte Cr10 = new Carte("Le Balrog,Fléau de Durin", "rainbow", "Images/CarteMulticolor/ImageMul10.png", 7, 5, 55);
+    Carte Cr1 = new Carte("Aragorn, L'unificateur", "rainbow", "Multicolor/ImageMul1.png", 5, 5, 50);
+    Carte Cr2 = new Carte("Saruman le multicolor", "rainbow", "Multicolor/ImageMul2.png", 5, 4, 45);
+    Carte Cr3 = new Carte("Sauron,le seigneur ténébreux", "rainbow", "Multicolor/ImageMul3.png", 7, 6, 65);
+    Carte Cr4 = new Carte("Eowyn, la vierge Guerrière", "rainbow", "Multicolor/ImageMul4.png", 5, 4, 45);
+    Carte Cr5 = new Carte("Gandalf le gris", "rainbow", "Multicolor/ImageMul5.png", 3, 4, 35);
+    Carte Cr6 = new Carte("Aragorn et Arwen,époux", "rainbow", "Multicolor/ImageMul6.png", 3, 6, 45);
+    Carte Cr7 = new Carte("Arachne, fille d'Ungoliant", "rainbow", "Multicolor/ImageMul7.png", 8, 8, 70);
+    Carte Cr8 = new Carte("Arwen, reine mortelle", "rainbow", "Multicolor/ImageMul8.png", 2, 2, 20);
+    Carte Cr9 = new Carte("Frodon, hobbit audacieux", "rainbow", "Multicolor/ImageMul9.png", 1, 3, 20);
+    Carte Cr10 = new Carte("Le Balrog,Fléau de Durin", "rainbow", "Multicolor/ImageMul10.png", 7, 5, 55);
 
     //Carte de type ténèbre
 
     ArrayList<Carte> Tenebre = new ArrayList<>();
 
-    Carte Ct1 = new Carte("Démon de tourmental", "noire", "CarteTenebre/ImageTe1.png", 4, 5, 45);
-    Carte Ct2 = new Carte("Chirurgien des ténèbres", "noire", "CarteTenebre/ImageTe2.jpg", 2, 1, 25);
-    Carte Ct3 = new Carte("Héritière Falkenrath", "noire", "CarteTenebre/ImageTe3.png", 2, 1, 25);
-    Carte Ct4 = new Carte("Festoyeuse du Crépuscule", "noire", "CarteTenebre/ImageTe4.png", 4, 5, 45);
-    Carte Ct5 = new Carte("élite de Liliana", "noire", "CarteTenebre/ImageTe5.png", 1, 1, 10);
-    Carte Ct6 = new Carte("Grognarded'Olivia", "noire", "CarteTenebre/ImageTe6.png", 2, 2, 20);
-    Carte Ct7 = new Carte("Chevalier de l'effroi Markov", "noire", "CarteTenebre/ImageTe7.jpeg", 3, 3, 30);
-    Carte Ct8 = new Carte("Seigneur de sang arrogant", "noire", "CarteTenebre/ImageTe8.png", 4, 4, 40);
-    Carte Ct9 = new Carte("Kinzu de Mornecouvent", "noire", "CarteTenebre/ImageTe9.jpg", 5, 4, 45);
-    Carte Ct10 = new Carte("Paladine parjure", "noire", "CarteTenebre/ImageTe10.jpeg", 1, 1, 10);
+    Carte Ct1 = new Carte("Démon de tourmental", "noire", "Tenebre/ImageTe1.png", 4, 5, 45);
+    Carte Ct2 = new Carte("Chirurgien des ténèbres", "noire", "Tenebre/ImageTe2.jpg", 2, 1, 25);
+    Carte Ct3 = new Carte("Héritière Falkenrath", "noire", "Tenebre/ImageTe3.png", 2, 1, 25);
+    Carte Ct4 = new Carte("Festoyeuse du Crépuscule", "noire", "Tenebre/ImageTe4.png", 4, 5, 45);
+    Carte Ct5 = new Carte("élite de Liliana", "noire", "Tenebre/ImageTe5.png", 1, 1, 10);
+    Carte Ct6 = new Carte("Grognarded'Olivia", "noire", "Tenebre/ImageTe6.png", 2, 2, 20);
+    Carte Ct7 = new Carte("Chevalier de l'effroi Markov", "noire", "Tenebre/ImageTe7.jpeg", 3, 3, 30);
+    Carte Ct8 = new Carte("Seigneur de sang arrogant", "noire", "Tenebre/ImageTe8.png", 4, 4, 40);
+    Carte Ct9 = new Carte("Kinzu de Mornecouvent", "noire", "Tenebre/ImageTe9.jpg", 5, 4, 45);
+    Carte Ct10 = new Carte("Paladine parjure", "noire", "Tenebre/ImageTe10.jpeg", 1, 1, 10);
 
 
     //Carte de type vie
 
     ArrayList<Carte> Vie = new ArrayList<>();
 
-    Carte Cv1 = new Carte("Dragon vert", "vert", "CarteVie/ImagesVie1.png", 4, 4, 40);
-    Carte Cv2 = new Carte("La vieille Ronge-Os", "vert", "CarteVie/ImagesVie2.png", 7, 7, 55);
-    Carte Cv3 = new Carte("Hydre aux écailles de mana", "vert", "CarteVie/ImagesVie3.jpg", 5, 4, 45);
-    Carte Cv4 = new Carte("Engloutisseur Faucheur de Ciel", "vert", "CarteVie/ImagesVie4.png", 5, 4, 45);
-    Carte Cv5 = new Carte("Intendant de Prédation", "vert", "CarteVie/ImagesVie5.png", 2, 2, 20);
-    Carte Cv6 = new Carte("Protecteur du bois", "vert", "CarteVie/ImagesVie6.jpg", 4, 6, 50);
-    Carte Cv7 = new Carte("vifsorbier, Ent impétueux", "vert", "CarteVie/ImagesVie7.jpg", 5, 6, 55);
-    Carte Cv8 = new Carte("Polukranos Renaissant", "vert", "CarteVie/ImagesVie8.jpg", 4, 5, 45);
-    Carte Cv9 = new Carte("Rénata, appelée à la chasse", "vert", "CarteVie/ImagesVie9.png", 4, 3, 35);
-    Carte Cv10 = new Carte("Cavalier verdoyant", "vert", "CarteVie/ImagesVie10.jpg", 4, 2, 30);
+    Carte Cv1 = new Carte("Dragon vert", "vert", "Vie/ImagesVie1.png", 4, 4, 40);
+    Carte Cv2 = new Carte("La vieille Ronge-Os", "vert", "Vie/ImagesVie2.png", 7, 7, 55);
+    Carte Cv3 = new Carte("Hydre aux écailles de mana", "vert", "Vie/ImagesVie3.jpg", 5, 4, 45);
+    Carte Cv4 = new Carte("Engloutisseur Faucheur de Ciel", "vert", "Vie/ImagesVie4.png", 5, 4, 45);
+    Carte Cv5 = new Carte("Intendant de Prédation", "vert", "Vie/ImagesVie5.png", 2, 2, 20);
+    Carte Cv6 = new Carte("Protecteur du bois", "vert", "Vie/ImagesVie6.jpg", 4, 6, 50);
+    Carte Cv7 = new Carte("vifsorbier, Ent impétueux", "vert", "Vie/ImagesVie7.jpg", 5, 6, 55);
+    Carte Cv8 = new Carte("Polukranos Renaissant", "vert", "Vie/ImagesVie8.jpg", 4, 5, 45);
+    Carte Cv9 = new Carte("Rénata, appelée à la chasse", "vert", "Vie/ImagesVie9.png", 4, 3, 35);
+    Carte Cv10 = new Carte("Cavalier verdoyant", "vert", "Vie/ImagesVie10.jpg", 4, 2, 30);
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -588,16 +593,16 @@ public class HelloController implements Initializable {
         Lumiere.add(Cl9);
         Lumiere.add(Cl10);
 
-        collection.add(Lumiere.get(alea_Tirage()));
+        collection.add(Lumiere.get(alea_liste()));
 
-        collection.add(Feu.get(alea_Tirage()));
+        collection.add(Feu.get(alea_liste()));
 
-        collection.add(Eau.get(alea_Tirage()));
+        collection.add(Eau.get(alea_liste()));
 
-        collection.add(Tenebre.get(alea_Tirage()));
+        collection.add(Tenebre.get(alea_liste()));
 
-        collection.add(Vie.get(alea_Tirage()));
+        collection.add(Vie.get(alea_liste()));
 
-        collection.add(Rainbow.get(alea_Tirage()));
+        collection.add(Rainbow.get(alea_liste()));
     }
 }

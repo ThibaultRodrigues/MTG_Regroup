@@ -49,7 +49,7 @@ public class HelloController implements Initializable {
         Alert alert = new Alert(Alert.AlertType.WARNING);
         alert.setTitle("Attention!");
         alert.setHeaderText(null);
-        alert.setContentText("Vous n'avez pas assez d'inigma pour acheter ce booster");
+        alert.setContentText("Vous n'avez pas assez d'inigma pour acheter ce booster. Il vous reste : " + Inigma + " Inigma");
         alert.showAndWait();
     }
 
@@ -328,7 +328,7 @@ public class HelloController implements Initializable {
         );
     }
 
-    int Inigma = 100;
+    int Inigma = 200;
 
     ///public void CombatMachine(){
 

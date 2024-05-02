@@ -3,12 +3,11 @@ package siothibault.magic_regroupment;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import java.net.URL;
-import java.util.Objects;
-import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.ArrayList;
 
@@ -43,6 +42,16 @@ public class HelloController implements Initializable {
     private AnchorPane Menuchoix;
 
     ArrayList<Carte> collection = new ArrayList<>();
+
+    // Créer une nouvelle alerte
+    private void afficherAlerteInsuffisanceInigma() {
+        // Créer une nouvelle alerte
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("Attention!");
+        alert.setHeaderText(null);
+        alert.setContentText("Vous n'avez pas assez d'inigma pour acheter ce booster");
+        alert.showAndWait();
+    }
 
     @FXML
     private ImageView CarteInvoquer;
@@ -345,6 +354,7 @@ public class HelloController implements Initializable {
                 Lumierecol.add(carteTiree);
             }
         } else {
+            afficherAlerteInsuffisanceInigma();
             changeAP(MenuMarche);
         }
     }
@@ -369,6 +379,7 @@ public class HelloController implements Initializable {
                 Eaucol.add(carteTiree);
             }
         } else {
+            afficherAlerteInsuffisanceInigma();
             changeAP(MenuMarche);
         }
     }
@@ -393,6 +404,7 @@ public class HelloController implements Initializable {
                 Tenebrecol.add(carteTiree);
             }
         } else {
+            afficherAlerteInsuffisanceInigma();
             changeAP(MenuMarche);
         }
     }
@@ -418,6 +430,7 @@ public class HelloController implements Initializable {
                 Feucol.add(carteTiree);
             }
         } else {
+            afficherAlerteInsuffisanceInigma();
             changeAP(MenuMarche);
         }
     }
@@ -442,6 +455,7 @@ public class HelloController implements Initializable {
                 Viecol.add(carteTiree);
             }
         } else {
+            afficherAlerteInsuffisanceInigma();
             changeAP(MenuMarche);
         }
     }
@@ -466,6 +480,7 @@ public class HelloController implements Initializable {
                 Rainbowcol.add(carteTiree);
             }
         } else {
+            afficherAlerteInsuffisanceInigma();
             changeAP(MenuMarche);
         }
     }

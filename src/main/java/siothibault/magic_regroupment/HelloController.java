@@ -283,6 +283,10 @@ public class HelloController implements Initializable {
         int Max = 9; int Min = 0;return (int) (Math.random() * ((Max - Min) + 1));
     }
 
+    public int alea_GrosTirage() {
+        int Max = 160; int Min = 0;return (int) (Math.random() * ((Max - Min) + 1));
+    }
+
     // Rend visible/invisible une AnchorPane ------------------------------------------------------------------------ //
     public void invisible(AnchorPane apCourante) {
         apCourante.setVisible(false);
@@ -333,6 +337,30 @@ public class HelloController implements Initializable {
     ///public void CombatMachine(){
 
     ///}
+
+    public void Gros_Tirage_Alea(){
+        if (Inigma >= 30) {
+            Inigma -= 30;
+            changeAP(Invocations);
+            if (alea_GrosTirage() <= 10){
+                Carte carteTiree = Rainbow.get(alea_Tirage());
+                boolean carteDejaDansCollection = false;
+                for (Carte carte : collection) {
+                    if (carte.equals(carteTiree)) {
+                        carteDejaDansCollection = true;
+                        break;
+                    }
+                }
+                if (carteDejaDansCollection) {
+                    Inigma += carteTiree.getPrix();
+                } else {
+                    changeImageViewImg(CarteInvoquer, carteTiree.getImage());
+                    collection.add(carteTiree);
+                    Rainbowcol.add(carteTiree);
+                    }
+                }
+            }
+    }
 
     public void Tirage_Booster_Blanc() {
         if (Inigma >= 30) {

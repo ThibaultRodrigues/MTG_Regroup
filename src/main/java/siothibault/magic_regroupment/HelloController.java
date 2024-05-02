@@ -461,8 +461,8 @@ public class HelloController implements Initializable {
     }
 
     public void Tirage_Booster_Rainbow() {
-        if (Inigma >= 30) {
-            Inigma -= 30;
+        if (Inigma >= 50) {
+            Inigma -= 50;
             changeAP(Invocations);
             Carte carteTiree = Rainbow.get(alea_Tirage());
             boolean carteDejaDansCollection = false;

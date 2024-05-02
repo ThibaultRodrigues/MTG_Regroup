@@ -5,105 +5,105 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane prefHeight="363.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="siothibault.magic_regroupment.HelloController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="siothibault.magic_regroupment.HelloController">
    <children>
-      <AnchorPane fx:id="Menuchoix" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="695.0">
+      <AnchorPane fx:id="Menuchoix" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="695.0" visible="false">
          <children>
-            <ImageView fitHeight="398.0" fitWidth="708.0" layoutX="-10.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1080.0" fitWidth="2163.0" layoutX="-619.0" layoutY="-348.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Magic-The-Gathering.jpg" />
                </image>
             </ImageView>
-            <ImageView id="type_multi" fx:id="Multimul" fitHeight="102.0" fitWidth="102.0" layoutX="112.0" layoutY="149.0" onMouseClicked="#goToMenuRainbow" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="type_multi" fx:id="Multimul" fitHeight="301.0" fitWidth="237.0" layoutX="-223.0" layoutY="37.0" onMouseClicked="#goToMenuRainbow" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_multi.png" />
                </image>
             </ImageView>
-            <ImageView id="marche" fx:id="Marche" fitHeight="132.0" fitWidth="143.0" layoutX="543.0" layoutY="12.0" onMouseClicked="#goToMarche" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="marche" fx:id="Marche" fitHeight="358.0" fitWidth="311.0" layoutX="807.0" layoutY="-324.0" onMouseClicked="#goToMarche" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Imagemarche.png" />
                </image>
             </ImageView>
-            <ImageView id="collection" fx:id="Deckbox" fitHeight="150.0" fitWidth="200.0" layoutX="556.0" layoutY="200.0" onMouseClicked="#goToCollection" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="collection" fx:id="Deckbox" fitHeight="393.0" fitWidth="419.0" layoutX="822.0" layoutY="284.0" onMouseClicked="#goToCollection" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/collection.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="99.0" fitWidth="150.0" layoutX="113.0" layoutY="29.0" onMouseClicked="#goToMenuLumiere" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="278.0" fitWidth="237.0" layoutX="-223.0" layoutY="-305.0" onMouseClicked="#goToMenuLumiere" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_lumirere.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="118.0" fitWidth="99.0" layoutX="13.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="234.0" fitWidth="218.0" layoutX="-558.0" layoutY="-62.0" onMouseClicked="#goToMenuTenebre" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_tenebre.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="99.0" layoutX="213.0" layoutY="108.0" onMouseClicked="#goToMenuFeu" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="356.0" fitWidth="230.0" layoutX="114.0" layoutY="-68.0" onMouseClicked="#goToMenuFeu" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_feu.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="113.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fitHeight="105.0" fitWidth="99.0" layoutX="188.0" layoutY="250.0" onMouseClicked="#goToMenuEau" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="196.0" fitWidth="237.0" layoutX="-13.0" layoutY="354.0" onMouseClicked="#goToMenuEau" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_eau.png" />
                </image></ImageView>
-            <ImageView fitHeight="99.0" fitWidth="99.0" layoutX="45.0" layoutY="251.0" onMouseClicked="#goToMenuVie" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="230.0" fitWidth="237.0" layoutX="-436.0" layoutY="360.0" onMouseClicked="#goToMenuVie" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_vie.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuLumiere" prefHeight="344.0" prefWidth="680.0" visible="false">
+      <AnchorPane fx:id="MenuLumiere" prefHeight="621.0" prefWidth="965.0" visible="false">
          <children>
-            <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1093.0" fitWidth="1917.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_Lumiere.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ImgLu1" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu1" fitHeight="465.0" fitWidth="322.0" layoutX="32.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu1.jpeg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu2" fitHeight="150.0" fitWidth="112.0" layoutX="158.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu2" fitHeight="501.0" fitWidth="332.0" layoutX="394.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu2.png" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu3" fitHeight="150.0" fitWidth="112.0" layoutX="297.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu3" fitHeight="593.0" fitWidth="322.0" layoutX="778.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu3.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu4" fitHeight="150.0" fitWidth="112.0" layoutX="431.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu4" fitHeight="586.0" fitWidth="333.0" layoutX="1130.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu4.jpeg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu5" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu5" fitHeight="494.0" fitWidth="332.0" layoutX="1510.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu5.png" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu6" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu6" fitHeight="464.0" fitWidth="332.0" layoutX="22.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu6.png" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu7" fitHeight="150.0" fitWidth="112.0" layoutX="158.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu7" fitHeight="464.0" fitWidth="332.0" layoutX="394.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu7.png" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu8" fitHeight="150.0" fitWidth="112.0" layoutX="295.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu8" fitHeight="464.0" fitWidth="333.0" layoutX="769.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu8.jpeg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu9" fitHeight="150.0" fitWidth="112.0" layoutX="431.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu9" fitHeight="464.0" fitWidth="333.0" layoutX="1130.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu9.jpeg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu10" fitHeight="150.0" fitWidth="112.0" layoutX="570.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu10" fitHeight="464.0" fitWidth="441.0" layoutX="1510.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Lumiere/ImageLu10.jpeg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="177.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu" fitHeight="69.0" fitWidth="100.0" layoutX="881.0" layoutY="480.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -112,62 +112,62 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuFeu" prefHeight="299.0" prefWidth="698.0" visible="false">
          <children>
-            <ImageView fitHeight="392.0" fitWidth="708.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1060.0" fitWidth="1984.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_feu.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="558.0" fitWidth="331.0" layoutX="36.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu1.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="462.0" fitWidth="358.0" layoutX="407.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu2.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="536.0" fitWidth="332.0" layoutX="784.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu3.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="440.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="462.0" fitWidth="332.0" layoutX="1168.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu4.jpeg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="480.0" fitWidth="332.0" layoutX="1547.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu5.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="484.0" fitWidth="340.0" layoutX="26.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu6.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="145.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="481.0" fitWidth="332.0" layoutX="406.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu7.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="296.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="524.0" fitWidth="332.0" layoutX="783.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu8.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="448.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="473.0" fitWidth="324.0" layoutX="1168.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu9.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="572.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="473.0" fitWidth="434.0" layoutX="1547.0" layoutY="587.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Feu/ImageFeu10.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="RetourMenu4" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="180.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu4" fitHeight="84.0" fitWidth="129.0" layoutX="886.0" layoutY="503.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -176,52 +176,52 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuTenebre" prefHeight="334.0" prefWidth="659.0" visible="false">
          <children>
-            <ImageView fitHeight="398.0" fitWidth="757.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_Tenebre.jpeg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ImgTe1" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgTe1" fitHeight="557.0" fitWidth="311.0" layoutX="98.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe1.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="579.0" fitWidth="311.0" layoutX="470.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe2.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="490.0" fitWidth="311.0" layoutX="834.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe3.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="439.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="448.0" fitWidth="311.0" layoutX="1198.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe4.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="452.0" fitWidth="311.0" layoutX="1564.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe5.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="432.0" fitWidth="299.0" layoutX="110.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe6.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="418.0" fitWidth="311.0" layoutX="470.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe7.jpeg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="295.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="434.0" fitWidth="299.0" layoutX="846.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe8.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="439.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="423.0" fitWidth="299.0" layoutX="1210.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe9.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="572.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="417.0" fitWidth="299.0" layoutX="1570.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Tenebre/ImageTe10.jpeg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu1" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="170.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu1" fitHeight="96.0" fitWidth="112.0" layoutX="934.0" layoutY="507.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -230,52 +230,52 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuVie" onMouseClicked="#goToDebut" prefHeight="299.0" prefWidth="698.0" visible="false">
          <children>
-            <ImageView fitHeight="398.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1087.0" fitWidth="1924.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_Vie.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="425.0" fitWidth="292.0" layoutX="105.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie1.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="528.0" fitWidth="292.0" layoutX="487.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie2.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="292.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="517.0" fitWidth="292.0" layoutX="868.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie3.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="450.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="528.0" fitWidth="299.0" layoutX="1217.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie4.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="418.0" fitWidth="299.0" layoutX="1561.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie5.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="16.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="443.0" fitWidth="299.0" layoutX="101.0" layoutY="650.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie6.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="153.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="462.0" fitWidth="292.0" layoutX="487.0" layoutY="639.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie7.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="292.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="418.0" fitWidth="299.0" layoutX="867.0" layoutY="649.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie8.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="447.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="464.0" fitWidth="297.0" layoutX="1218.0" layoutY="651.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie9.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="574.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="417.0" fitWidth="324.0" layoutX="1562.0" layoutY="650.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Vie/ImagesVie10.jpg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu2" fitHeight="44.0" fitWidth="84.0" layoutX="309.0" layoutY="177.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu2" fitHeight="65.0" fitWidth="91.0" layoutX="968.0" layoutY="514.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -284,106 +284,106 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuEau" prefHeight="390.0" prefWidth="721.0" visible="false">
          <children>
-            <ImageView fitHeight="398.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1082.0" fitWidth="1924.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_eau.jpeg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="378.0" fitWidth="292.0" layoutX="253.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau1.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="473.0" fitWidth="271.0" layoutX="620.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau2.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="524.0" fitWidth="271.0" layoutX="963.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau3.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="434.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="443.0" fitWidth="271.0" layoutX="1291.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau4.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="573.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="393.0" fitWidth="271.0" layoutX="1613.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau5.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="425.0" fitWidth="271.0" layoutX="256.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau6.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="418.0" fitWidth="271.0" layoutX="630.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau7.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="291.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="425.0" fitWidth="271.0" layoutX="984.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau8.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="432.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="432.0" fitWidth="271.0" layoutX="1290.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau9.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="378.0" fitWidth="271.0" layoutX="1613.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Eau/ImagesEau10.jpg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu3" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="174.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu3" fitHeight="75.0" fitWidth="91.0" layoutX="1038.0" layoutY="500.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuMulticolor" prefHeight="299.0" prefWidth="698.0" visible="false">
+      <AnchorPane fx:id="MenuMulticolor" prefHeight="299.0" prefWidth="698.0">
          <children>
-            <ImageView fitHeight="398.0" fitWidth="714.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1088.0" fitWidth="2158.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_colore.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="362.0" fitWidth="254.0" layoutX="109.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul1.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="448.0" fitWidth="254.0" layoutX="472.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul2.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="473.0" fitWidth="254.0" layoutX="862.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul3.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="435.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="475.0" fitWidth="254.0" layoutX="1246.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul4.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="418.0" fitWidth="254.0" layoutX="1600.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul5.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="373.0" fitWidth="254.0" layoutX="109.0" layoutY="664.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul6.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="448.0" fitWidth="254.0" layoutX="471.0" layoutY="664.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul7.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="462.0" fitWidth="254.0" layoutX="862.0" layoutY="664.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul8.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="433.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="448.0" fitWidth="254.0" layoutX="1245.0" layoutY="664.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul9.png" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="569.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="462.0" fitWidth="254.0" layoutX="1600.0" layoutY="664.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Multicolor/ImageMul10.png" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu5" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="174.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu5" fitHeight="84.0" fitWidth="152.0" layoutX="912.0" layoutY="504.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -392,140 +392,140 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuCollection" prefHeight="299.0" prefWidth="698.0" visible="false">
          <children>
-            <ImageView fitHeight="398.0" fitWidth="740.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1081.0" fitWidth="1945.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Fond_collection.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="RetourMenu6" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="174.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu6" fitHeight="268.0" fitWidth="261.0" layoutX="1560.0" layoutY="43.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColLum" fitHeight="99.0" fitWidth="101.0" layoutX="298.0" layoutY="14.0" onMouseClicked="#goToMenuLumiereCol" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColLum" fitHeight="278.0" fitWidth="261.0" layoutX="831.0" layoutY="43.0" onMouseClicked="#goToMenuLumiereCol" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_lumirere.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColEau" fitHeight="111.0" fitWidth="99.0" layoutX="429.0" layoutY="110.0" onMouseClicked="#goToMenuEauCol" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColEau" fitHeight="278.0" fitWidth="292.0" layoutX="1187.0" layoutY="299.0" onMouseClicked="#goToMenuEauCol" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_eau.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColTen" fitHeight="100.0" fitWidth="106.0" layoutX="393.0" layoutY="266.0" onMouseClicked="#goToMenuTenebreCol" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTen" fitHeight="254.0" fitWidth="271.0" layoutX="1085.0" layoutY="744.0" onMouseClicked="#goToMenuTenebreCol" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_tenebre.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu" fitHeight="105.0" fitWidth="121.0" layoutX="201.0" layoutY="263.0" onMouseClicked="#goToMenuFeuCol" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu" fitHeight="245.0" fitWidth="370.0" layoutX="592.0" layoutY="744.0" onMouseClicked="#goToMenuFeuCol" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_feu.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColVie" fitHeight="105.0" fitWidth="112.0" layoutX="163.0" layoutY="107.0" onMouseClicked="#goToMenuVieCol" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie" fitHeight="261.0" fitWidth="311.0" layoutX="475.0" layoutY="299.0" onMouseClicked="#goToMenuVieCol" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_vie.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="CollMulti" fitHeight="105.0" fitWidth="145.0" layoutX="574.0" layoutY="9.0" onMouseClicked="#goToMenuRainbowCol" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="CollMulti" fitHeight="321.0" fitWidth="311.0" layoutX="794.0" layoutY="388.0" onMouseClicked="#goToMenuRainbowCol" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/type_multi.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuMarche" prefHeight="396.0" prefWidth="0.0">
+      <AnchorPane fx:id="MenuMarche" prefHeight="574.0" prefWidth="913.0" visible="false">
          <children>
-            <ImageView fitHeight="396.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1096.0" fitWidth="1920.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Marche.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="RetourMenu7" fitHeight="44.0" fitWidth="84.0" layoutX="332.0" layoutY="190.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../Projet_MTG/Retour.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="BoosterEau" fitHeight="150.0" fitWidth="200.0" layoutX="552.0" layoutY="34.0" onMouseClicked="#Tirage_Booster_Bleu" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="BoosterEau" fitHeight="326.0" fitWidth="218.0" layoutX="1386.0" layoutY="182.0" onMouseClicked="#Tirage_Booster_Bleu" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/BoosterBleu.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="BoosterTenebre" fitHeight="150.0" fitWidth="79.0" layoutX="443.0" layoutY="198.0" onMouseClicked="#Tirage_Booster_Noir" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="BoosterTenebre" fitHeight="393.0" fitWidth="196.0" layoutX="1184.0" layoutY="574.0" onMouseClicked="#Tirage_Booster_Noir" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/BoosterNoire.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="BoosterFeu" fitHeight="150.0" fitWidth="84.0" layoutX="197.0" layoutY="198.0" onMouseClicked="#Tirage_Booster_Rouge" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="BoosterFeu" fitHeight="393.0" fitWidth="254.0" layoutX="531.0" layoutY="564.0" onMouseClicked="#Tirage_Booster_Rouge" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/BoosterRouge.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="BoosterLumiere" fitHeight="150.0" fitWidth="73.0" layoutX="349.0" layoutY="4.0" onMouseClicked="#Tirage_Booster_Blanc" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="BoosterLumiere" fitHeight="245.0" fitWidth="120.0" layoutX="899.0" layoutY="74.0" onMouseClicked="#Tirage_Booster_Blanc" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/BoosterLumiere.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="BoosterMulti" fitHeight="150.0" fitWidth="84.0" layoutX="598.0" layoutY="212.0" onMouseClicked="#Tirage_Booster_Rainbow" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="BoosterMulti" fitHeight="345.0" fitWidth="174.0" layoutX="1594.0" layoutY="566.0" onMouseClicked="#Tirage_Booster_Rainbow" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/BoosterMulticolor.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="BoosterVert" fitHeight="150.0" fitWidth="147.0" layoutX="123.0" layoutY="34.0" onMouseClicked="#Tirage_Booster_Vert" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="BoosterVert" fitHeight="387.0" fitWidth="166.0" layoutX="370.0" layoutY="176.0" onMouseClicked="#Tirage_Booster_Vert" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/BoosterVert.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RetourMenu7" fitHeight="261.0" fitWidth="166.0" layoutX="1639.0" layoutY="74.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Projet_MTG/Retour.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="MenuLumiereCol" prefHeight="344.0" prefWidth="680.0" visible="false">
          <children>
-            <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1082.0" fitWidth="1920.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_Lumiere.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ImgLu11" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu11" fitHeight="570.0" fitWidth="261.0" layoutX="128.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu21" fitHeight="150.0" fitWidth="112.0" layoutX="151.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu21" fitHeight="529.0" fitWidth="261.0" layoutX="479.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu31" fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu31" fitHeight="368.0" fitWidth="271.0" layoutX="842.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu41" fitHeight="150.0" fitWidth="112.0" layoutX="431.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu41" fitHeight="393.0" fitWidth="269.0" layoutX="1205.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu51" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu51" fitHeight="393.0" fitWidth="265.0" layoutX="1566.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu61" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu61" fitHeight="362.0" fitWidth="278.0" layoutX="129.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu71" fitHeight="150.0" fitWidth="112.0" layoutX="151.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu71" fitHeight="373.0" fitWidth="299.0" layoutX="476.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu81" fitHeight="150.0" fitWidth="112.0" layoutX="295.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu81" fitHeight="373.0" fitWidth="271.0" layoutX="826.0" layoutY="683.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu91" fitHeight="150.0" fitWidth="112.0" layoutX="431.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu91" fitHeight="377.0" fitWidth="297.0" layoutX="1202.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ImgLu101" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ImgLu101" fitHeight="378.0" fitWidth="292.0" layoutX="1565.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu8" fitHeight="44.0" fitWidth="84.0" layoutX="309.0" layoutY="174.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu8" fitHeight="75.0" fitWidth="100.0" layoutX="897.0" layoutY="524.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -534,52 +534,52 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuTenebreCol" onMouseClicked="#goToDebut" prefHeight="299.0" prefWidth="698.0" visible="false">
          <children>
-            <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1082.0" fitWidth="1924.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_Tenebre.jpeg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColTe1" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTe1" fitHeight="475.0" fitWidth="261.0" layoutX="141.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="448.0" fitWidth="265.0" layoutX="525.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColTe2" fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTe2" fitHeight="475.0" fitWidth="265.0" layoutX="887.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColTe3" fitHeight="150.0" fitWidth="112.0" layoutX="432.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTe3" fitHeight="475.0" fitWidth="265.0" layoutX="1235.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColTe4" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTe4" fitHeight="393.0" fitWidth="269.0" layoutX="1586.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColTe5" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTe5" fitHeight="378.0" fitWidth="265.0" layoutX="154.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="147.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="368.0" fitWidth="265.0" layoutX="525.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColTe6" fitHeight="150.0" fitWidth="112.0" layoutX="298.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTe6" fitHeight="463.0" fitWidth="269.0" layoutX="882.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColTe7" fitHeight="150.0" fitWidth="112.0" layoutX="430.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTe7" fitHeight="408.0" fitWidth="272.0" layoutX="1229.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColTe8" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColTe8" fitHeight="377.0" fitWidth="269.0" layoutX="1586.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu11" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="170.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu11" fitHeight="108.0" fitWidth="174.0" layoutX="935.0" layoutY="510.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -588,52 +588,52 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuVieCol" onMouseClicked="#goToDebut" prefHeight="299.0" prefWidth="698.0" visible="false">
          <children>
-            <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1082.0" fitWidth="1994.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_Vie.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColVie1" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie1" fitHeight="482.0" fitWidth="283.0" layoutX="139.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie2" fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie2" fitHeight="516.0" fitWidth="283.0" layoutX="514.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie3" fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie3" fitHeight="495.0" fitWidth="278.0" layoutX="869.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie4" fitHeight="150.0" fitWidth="112.0" layoutX="440.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie4" fitHeight="462.0" fitWidth="283.0" layoutX="1217.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie5" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie5" fitHeight="393.0" fitWidth="292.0" layoutX="1585.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie6" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie6" fitHeight="473.0" fitWidth="292.0" layoutX="130.0" layoutY="620.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie7" fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie7" fitHeight="484.0" fitWidth="292.0" layoutX="505.0" layoutY="620.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie8" fitHeight="150.0" fitWidth="112.0" layoutX="291.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie8" fitHeight="408.0" fitWidth="292.0" layoutX="855.0" layoutY="620.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie9" fitHeight="150.0" fitWidth="112.0" layoutX="440.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie9" fitHeight="468.0" fitWidth="292.0" layoutX="1217.0" layoutY="620.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="ColVie10" fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColVie10" fitHeight="417.0" fitWidth="293.0" layoutX="1584.0" layoutY="620.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu21" fitHeight="35.0" fitWidth="67.0" layoutX="317.0" layoutY="174.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu21" fitHeight="75.0" fitWidth="119.0" layoutX="949.0" layoutY="484.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -642,52 +642,57 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuEauCol" onMouseClicked="#goToDebut" prefHeight="299.0" prefWidth="698.0" visible="false">
          <children>
-            <ImageView fitHeight="393.0" fitWidth="698.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1082.0" fitWidth="1963.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_eau.jpeg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColEau1" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColEau1" fitHeight="393.0" fitWidth="233.0" layoutX="328.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="329.0" fitWidth="237.0" layoutX="618.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="293.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="329.0" fitWidth="237.0" layoutX="952.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="435.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="353.0" fitWidth="237.0" layoutX="1260.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="378.0" fitWidth="237.0" layoutX="1599.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="323.0" fitWidth="237.0" layoutX="332.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="149.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="329.0" fitWidth="237.0" layoutX="620.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="298.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="393.0" fitWidth="254.0" layoutX="946.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="435.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="377.0" fitWidth="254.0" layoutX="1252.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fitHeight="150.0" fitWidth="112.0" layoutX="571.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="368.0" fitWidth="254.0" layoutX="1582.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu31" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="174.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu31" fitHeight="114.0" fitWidth="135.0" layoutX="995.0" layoutY="467.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Projet_MTG/Retour.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="RetourMenu311" fitHeight="114.0" fitWidth="135.0" layoutX="1005.0" layoutY="477.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
@@ -696,61 +701,61 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuFeuCol" onMouseClicked="#goToDebut" prefHeight="299.0" prefWidth="698.0" visible="false">
          <children>
-            <ImageView fitHeight="411.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1095.0" fitWidth="1968.0" layoutX="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_feu.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu1" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu1" fitHeight="335.0" fitWidth="241.0" layoutX="200.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu41" fitHeight="44.0" fitWidth="84.0" layoutX="310.0" layoutY="177.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu41" fitHeight="88.0" fitWidth="143.0" layoutX="985.0" layoutY="495.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu10" fitHeight="150.0" fitWidth="112.0" layoutX="585.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu10" fitHeight="335.0" fitWidth="254.0" layoutX="1677.0" layoutY="647.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu9" fitHeight="150.0" fitWidth="112.0" layoutX="445.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu9" fitHeight="405.0" fitWidth="245.0" layoutX="1313.0" layoutY="647.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu8" fitHeight="150.0" fitWidth="112.0" layoutX="300.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu8" fitHeight="329.0" fitWidth="237.0" layoutX="934.0" layoutY="651.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu7" fitHeight="150.0" fitWidth="112.0" layoutX="159.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu7" fitHeight="329.0" fitWidth="230.0" layoutX="551.0" layoutY="651.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu6" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu6" fitHeight="353.0" fitWidth="230.0" layoutX="210.0" layoutY="647.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu2" fitHeight="150.0" fitWidth="112.0" layoutX="159.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu2" fitHeight="557.0" fitWidth="233.0" layoutX="548.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu3" fitHeight="150.0" fitWidth="112.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu3" fitHeight="329.0" fitWidth="265.0" layoutX="934.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu4" fitHeight="150.0" fitWidth="112.0" layoutX="445.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu4" fitHeight="377.0" fitWidth="233.0" layoutX="1311.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColFeu5" fitHeight="150.0" fitWidth="112.0" layoutX="585.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColFeu5" fitHeight="329.0" fitWidth="237.0" layoutX="1679.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
@@ -759,61 +764,61 @@
       </AnchorPane>
       <AnchorPane fx:id="MenuMulticolorCol" onMouseClicked="#goToDebut" prefHeight="299.0" prefWidth="698.0" visible="false">
          <children>
-            <ImageView fitHeight="398.0" fitWidth="708.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1097.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Images_de_fond_colore.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti1" fitHeight="150.0" fitWidth="112.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti1" fitHeight="562.0" fitWidth="254.0" layoutX="69.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>
-            <ImageView fx:id="RetourMenu51" fitHeight="44.0" fitWidth="84.0" layoutX="311.0" layoutY="174.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu51" fitHeight="75.0" fitWidth="130.0" layoutX="889.0" layoutY="503.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti2" fitHeight="150.0" fitWidth="112.0" layoutX="151.0" layoutY="15.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti2" fitHeight="434.0" fitWidth="254.0" layoutX="468.0" layoutY="89.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti3" fitHeight="150.0" fitWidth="112.0" layoutX="295.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti3" fitHeight="353.0" fitWidth="272.0" layoutX="832.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti4" fitHeight="150.0" fitWidth="112.0" layoutX="429.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti4" fitHeight="434.0" fitWidth="269.0" layoutX="1193.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti5" fitHeight="150.0" fitWidth="112.0" layoutX="573.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti5" fitHeight="362.0" fitWidth="269.0" layoutX="1604.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti6" fitHeight="150.0" fitWidth="112.0" layoutX="16.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti6" fitHeight="393.0" fitWidth="269.0" layoutX="55.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti7" fitHeight="150.0" fitWidth="112.0" layoutX="151.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti7" fitHeight="418.0" fitWidth="269.0" layoutX="444.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti8" fitHeight="150.0" fitWidth="112.0" layoutX="294.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti8" fitHeight="408.0" fitWidth="265.0" layoutX="821.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti9" fitHeight="150.0" fitWidth="112.0" layoutX="429.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti9" fitHeight="368.0" fitWidth="254.0" layoutX="1208.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="ColMulti10" fitHeight="150.0" fitWidth="112.0" layoutX="573.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="ColMulti10" fitHeight="373.0" fitWidth="271.0" layoutX="1600.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image>
@@ -822,17 +827,17 @@
       </AnchorPane>
       <AnchorPane fx:id="Invocations" prefHeight="200.0" prefWidth="200.0" visible="false">
          <children>
-            <ImageView fitHeight="398.0" fitWidth="616.0" layoutX="82.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1080.0" fitWidth="1583.0" layoutX="117.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Invocation.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="RetourMenu511" fitHeight="44.0" fitWidth="84.0" layoutX="97.0" layoutY="14.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="RetourMenu511" fitHeight="237.0" fitWidth="254.0" layoutX="136.0" layoutY="14.0" onMouseClicked="#goToDebut" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Retour.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="CarteInvoquer" fitHeight="172.0" fitWidth="136.0" layoutX="292.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="CarteInvoquer" fitHeight="633.0" fitWidth="572.0" layoutX="642.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/CarteNonInvoquer.jpg" />
                </image></ImageView>

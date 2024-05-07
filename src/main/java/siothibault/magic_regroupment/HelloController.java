@@ -338,30 +338,6 @@ public class HelloController implements Initializable {
 
     ///}
 
-    public void Gros_Tirage_Alea(){
-        if (Inigma >= 30) {
-            Inigma -= 30;
-            changeAP(Invocations);
-            if (alea_GrosTirage() <= 10){
-                Carte carteTiree = Rainbow.get(alea_Tirage());
-                boolean carteDejaDansCollection = false;
-                for (Carte carte : collection) {
-                    if (carte.equals(carteTiree)) {
-                        carteDejaDansCollection = true;
-                        break;
-                    }
-                }
-                if (carteDejaDansCollection) {
-                    Inigma += carteTiree.getPrix();
-                } else {
-                    changeImageViewImg(CarteInvoquer, carteTiree.getImage());
-                    collection.add(carteTiree);
-                    Rainbowcol.add(carteTiree);
-                    }
-                }
-            }
-    }
-
     public void Tirage_Booster_Blanc() {
         if (Inigma >= 30) {
             Inigma -= 30;

@@ -434,9 +434,9 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MenuMarche" prefHeight="574.0" prefWidth="913.0" visible="false">
+      <AnchorPane fx:id="MenuMarche" prefHeight="574.0" prefWidth="913.0">
          <children>
-            <ImageView fitHeight="1096.0" fitWidth="1920.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="1082.0" fitWidth="2053.0" layoutX="-80.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/Marche.jpg" />
                </image>
@@ -456,7 +456,7 @@
                   <Image url="@../../Projet_MTG/BoosterRouge.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="BoosterLumiere" fitHeight="245.0" fitWidth="120.0" layoutX="899.0" layoutY="74.0" onMouseClicked="#Tirage_Booster_Blanc" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="BoosterLumiere" fitHeight="244.0" fitWidth="129.0" layoutX="889.0" layoutY="41.0" onMouseClicked="#Tirage_Booster_Blanc" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../Projet_MTG/BoosterLumiere.png" />
                </image>

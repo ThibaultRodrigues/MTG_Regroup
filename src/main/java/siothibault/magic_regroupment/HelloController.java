@@ -84,6 +84,7 @@ public class HelloController implements Initializable {
     private ImageView ColTe10;
 
 
+
     @FXML
     private ImageView ColLum1;
     @FXML
@@ -760,64 +761,64 @@ public class HelloController implements Initializable {
         imagevieweau.add(ColEau10);
 
 
-        imagevieweau.add(ColVie1);
-        imagevieweau.add(ColVie2);
-        imagevieweau.add(ColVie3);
-        imagevieweau.add(ColVie4);
-        imagevieweau.add(ColVie5);
-        imagevieweau.add(ColVie6);
-        imagevieweau.add(ColVie7);
-        imagevieweau.add(ColVie8);
-        imagevieweau.add(ColVie9);
-        imagevieweau.add(ColVie10);
+        imageviewvie.add(ColVie1);
+        imageviewvie.add(ColVie2);
+        imageviewvie.add(ColVie3);
+        imageviewvie.add(ColVie4);
+        imageviewvie.add(ColVie5);
+        imageviewvie.add(ColVie6);
+        imageviewvie.add(ColVie7);
+        imageviewvie.add(ColVie8);
+        imageviewvie.add(ColVie9);
+        imageviewvie.add(ColVie10);
 
 
-        imagevieweau.add(ColFeu1);
-        imagevieweau.add(ColFeu2);
-        imagevieweau.add(ColFeu3);
-        imagevieweau.add(ColFeu4);
-        imagevieweau.add(ColFeu5);
-        imagevieweau.add(ColFeu6);
-        imagevieweau.add(ColFeu7);
-        imagevieweau.add(ColFeu8);
-        imagevieweau.add(ColFeu9);
-        imagevieweau.add(ColFeu10);
+        imageviewfeu.add(ColFeu1);
+        imageviewfeu.add(ColFeu2);
+        imageviewfeu.add(ColFeu3);
+        imageviewfeu.add(ColFeu4);
+        imageviewfeu.add(ColFeu5);
+        imageviewfeu.add(ColFeu6);
+        imageviewfeu.add(ColFeu7);
+        imageviewfeu.add(ColFeu8);
+        imageviewfeu.add(ColFeu9);
+        imageviewfeu.add(ColFeu10);
 
 
-        imagevieweau.add(ColLum1);
-        imagevieweau.add(ColLum2);
-        imagevieweau.add(ColLum3);
-        imagevieweau.add(ColLum4);
-        imagevieweau.add(ColLum5);
-        imagevieweau.add(ColLum6);
-        imagevieweau.add(ColLum7);
-        imagevieweau.add(ColLum8);
-        imagevieweau.add(ColLum9);
-        imagevieweau.add(ColLum10);
+        imageviewlumiere.add(ColLum1);
+        imageviewlumiere.add(ColLum2);
+        imageviewlumiere.add(ColLum3);
+        imageviewlumiere.add(ColLum4);
+        imageviewlumiere.add(ColLum5);
+        imageviewlumiere.add(ColLum6);
+        imageviewlumiere.add(ColLum7);
+        imageviewlumiere.add(ColLum8);
+        imageviewlumiere.add(ColLum9);
+        imageviewlumiere.add(ColLum10);
 
 
-        imagevieweau.add(ColTe1);
-        imagevieweau.add(ColTe2);
-        imagevieweau.add(ColTe3);
-        imagevieweau.add(ColTe4);
-        imagevieweau.add(ColTe5);
-        imagevieweau.add(ColTe6);
-        imagevieweau.add(ColTe7);
-        imagevieweau.add(ColTe8);
-        imagevieweau.add(ColTe9);
-        imagevieweau.add(ColTe10);
+        imageviewtenebre.add(ColTe1);
+        imageviewtenebre.add(ColTe2);
+        imageviewtenebre.add(ColTe3);
+        imageviewtenebre.add(ColTe4);
+        imageviewtenebre.add(ColTe5);
+        imageviewtenebre.add(ColTe6);
+        imageviewtenebre.add(ColTe7);
+        imageviewtenebre.add(ColTe8);
+        imageviewtenebre.add(ColTe9);
+        imageviewtenebre.add(ColTe10);
 
 
-        imagevieweau.add(ColMulti1);
-        imagevieweau.add(ColMulti2);
-        imagevieweau.add(ColMulti3);
-        imagevieweau.add(ColMulti4);
-        imagevieweau.add(ColMulti5);
-        imagevieweau.add(ColMulti6);
-        imagevieweau.add(ColMulti7);
-        imagevieweau.add(ColMulti8);
-        imagevieweau.add(ColMulti9);
-        imagevieweau.add(ColMulti10);
+        imageviewrainbow.add(ColMulti1);
+        imageviewrainbow.add(ColMulti2);
+        imageviewrainbow.add(ColMulti3);
+        imageviewrainbow.add(ColMulti4);
+        imageviewrainbow.add(ColMulti5);
+        imageviewrainbow.add(ColMulti6);
+        imageviewrainbow.add(ColMulti7);
+        imageviewrainbow.add(ColMulti8);
+        imageviewrainbow.add(ColMulti9);
+        imageviewrainbow.add(ColMulti10);
 
 
         Feu.add(Cf1);

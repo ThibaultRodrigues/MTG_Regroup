@@ -457,7 +457,7 @@ public class HelloController implements Initializable {
         );
     }
 
-    int Inigma = 200;
+    int Inigma = 2000;
 
     ///public void CombatMachine(){
 

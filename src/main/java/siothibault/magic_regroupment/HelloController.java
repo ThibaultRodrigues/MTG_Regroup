@@ -13,6 +13,18 @@ import java.util.ArrayList;
 
 public class HelloController implements Initializable {
     ArrayList<ImageView> imagevieweau = new ArrayList<>();
+
+    ArrayList<ImageView> imageviewfeu = new ArrayList<>();
+
+    ArrayList<ImageView> imageviewvie = new ArrayList<>();
+
+    ArrayList<ImageView> imageviewtenebre = new ArrayList<>();
+
+    ArrayList<ImageView> imageviewlumiere = new ArrayList<>();
+
+    ArrayList<ImageView> imageviewrainbow = new ArrayList<>();
+
+
     ArrayList<Carte> Machine = new ArrayList<>();
     ArrayList<Carte> Feu = new ArrayList<>();
     ArrayList<Carte> Eau = new ArrayList<>();
@@ -26,6 +38,138 @@ public class HelloController implements Initializable {
     ArrayList<Carte> Viecol = new ArrayList<>();
     ArrayList<Carte> Lumierecol = new ArrayList<>();
     ArrayList<Carte> Rainbowcol = new ArrayList<>();
+
+
+    @FXML
+    private ImageView ColMulti1;
+    @FXML
+    private ImageView ColMulti2;
+    @FXML
+    private ImageView ColMulti3;
+    @FXML
+    private ImageView ColMulti4;
+    @FXML
+    private ImageView ColMulti5;
+    @FXML
+    private ImageView ColMulti6;
+    @FXML
+    private ImageView ColMulti7;
+    @FXML
+    private ImageView ColMulti8;
+    @FXML
+    private ImageView ColMulti9;
+    @FXML
+    private ImageView ColMulti10;
+
+
+    @FXML
+    private ImageView ColTe1;
+    @FXML
+    private ImageView ColTe2;
+    @FXML
+    private ImageView ColTe3;
+    @FXML
+    private ImageView ColTe4;
+    @FXML
+    private ImageView ColTe5;
+    @FXML
+    private ImageView ColTe6;
+    @FXML
+    private ImageView ColTe7;
+    @FXML
+    private ImageView ColTe8;
+    @FXML
+    private ImageView ColTe9;
+    @FXML
+    private ImageView ColTe10;
+
+
+    @FXML
+    private ImageView ColLum1;
+    @FXML
+    private ImageView ColLum2;
+    @FXML
+    private ImageView ColLum3;
+    @FXML
+    private ImageView ColLum4;
+    @FXML
+    private ImageView ColLum5;
+    @FXML
+    private ImageView ColLum6;
+    @FXML
+    private ImageView ColLum7;
+    @FXML
+    private ImageView ColLum8;
+    @FXML
+    private ImageView ColLum9;
+    @FXML
+    private ImageView ColLum10;
+
+    @FXML
+    private ImageView ColVie1;
+    @FXML
+    private ImageView ColVie2;
+    @FXML
+    private ImageView ColVie3;
+    @FXML
+    private ImageView ColVie4;
+    @FXML
+    private ImageView ColVie5;
+    @FXML
+    private ImageView ColVie6;
+    @FXML
+    private ImageView ColVie7;
+    @FXML
+    private ImageView ColVie8;
+    @FXML
+    private ImageView ColVie9;
+    @FXML
+    private ImageView ColVie10;
+
+
+    @FXML
+    private ImageView ColFeu1;
+    @FXML
+    private ImageView ColFeu2;
+    @FXML
+    private ImageView ColFeu3;
+    @FXML
+    private ImageView ColFeu4;
+    @FXML
+    private ImageView ColFeu5;
+    @FXML
+    private ImageView ColFeu6;
+    @FXML
+    private ImageView ColFeu7;
+    @FXML
+    private ImageView ColFeu8;
+    @FXML
+    private ImageView ColFeu9;
+    @FXML
+    private ImageView ColFeu10;
+
+
+    @FXML
+    private ImageView ColEau1;
+    @FXML
+    private ImageView ColEau2;
+    @FXML
+    private ImageView ColEau3;
+    @FXML
+    private ImageView ColEau4;
+    @FXML
+    private ImageView ColEau5;
+    @FXML
+    private ImageView ColEau6;
+    @FXML
+    private ImageView ColEau7;
+    @FXML
+    private ImageView ColEau8;
+    @FXML
+    private ImageView ColEau9;
+    @FXML
+    private ImageView ColEau10;
+
 
     @FXML
     private AnchorPane MenuVieCol;
@@ -43,30 +187,9 @@ public class HelloController implements Initializable {
     private AnchorPane Menuchoix;
 
     ArrayList<Carte> collection = new ArrayList<>();
+
     @FXML
     private ImageView ImgLu71;
-    @FXML
-    private ImageView ColMulti9;
-    @FXML
-    private ImageView ColLum;
-    @FXML
-    private ImageView ColMulti6;
-    @FXML
-    private ImageView ColMulti5;
-    @FXML
-    private ImageView ColMulti8;
-    @FXML
-    private ImageView ColMulti7;
-    @FXML
-    private ImageView ColMulti2;
-    @FXML
-    private ImageView ColMulti1;
-    @FXML
-    private ImageView ColMulti4;
-    @FXML
-    private ImageView ColMulti3;
-    @FXML
-    private ImageView ColVie;
     @FXML
     private ImageView ImgLu61;
     @FXML
@@ -104,8 +227,6 @@ public class HelloController implements Initializable {
     @FXML
     private ImageView RetourMenu11;
     @FXML
-    private ImageView ColMulti10;
-    @FXML
     private ImageView ColEau;
     @FXML
     private ImageView BoosterVert;
@@ -127,22 +248,6 @@ public class HelloController implements Initializable {
     private ImageView BoosterLumiere;
     @FXML
     private ImageView ImgLu21;
-    @FXML
-    private ImageView ColTe4;
-    @FXML
-    private ImageView ColTe3;
-    @FXML
-    private ImageView ColTe2;
-    @FXML
-    private ImageView ColTe1;
-    @FXML
-    private ImageView ColTe8;
-    @FXML
-    private ImageView ColTe7;
-    @FXML
-    private ImageView ColTe6;
-    @FXML
-    private ImageView ColTe5;
     @FXML
     private ImageView BoosterMulti;
     @FXML
@@ -181,22 +286,6 @@ public class HelloController implements Initializable {
     private ImageView BoosterTenebre;
     @FXML
     private ImageView ImgLu81;
-    @FXML
-    private ImageView ImgTe1;
-    @FXML
-    private ImageView ColEau9;
-    @FXML
-    private ImageView ColEau10;
-    @FXML
-    private ImageView ColEau7;
-    @FXML
-    private ImageView ColEau8;
-    @FXML
-    private ImageView ColEau5;
-    @FXML
-    private ImageView ColEau6;
-    @FXML
-    private ImageView ColEau4;
 
     // Créer une nouvelle alerte
     private void afficherAlerteInsuffisanceInigma() {
@@ -210,55 +299,6 @@ public class HelloController implements Initializable {
 
     @FXML
     private ImageView CarteInvoquer;
-
-    @FXML
-    private ImageView ColVie1;
-    @FXML
-    private ImageView ColVie2;
-    @FXML
-    private ImageView ColVie3;
-    @FXML
-    private ImageView ColVie4;
-    @FXML
-    private ImageView ColVie5;
-    @FXML
-    private ImageView ColVie6;
-    @FXML
-    private ImageView ColVie7;
-    @FXML
-    private ImageView ColVie8;
-    @FXML
-    private ImageView ColVie9;
-    @FXML
-    private ImageView ColVie10;
-
-    @FXML
-    private ImageView ColFeu1;
-    @FXML
-    private ImageView ColFeu2;
-    @FXML
-    private ImageView ColFeu3;
-    @FXML
-    private ImageView ColFeu4;
-    @FXML
-    private ImageView ColFeu5;
-    @FXML
-    private ImageView ColFeu6;
-    @FXML
-    private ImageView ColFeu7;
-    @FXML
-    private ImageView ColFeu8;
-    @FXML
-    private ImageView ColFeu9;
-    @FXML
-    private ImageView ColFeu10;
-
-    @FXML
-    private ImageView ColEau1;
-    @FXML
-    private ImageView ColEau2;
-    @FXML
-    private ImageView ColEau3;
 
     @FXML
     private AnchorPane MenuLumiere;
@@ -581,8 +621,43 @@ public class HelloController implements Initializable {
 
     @FXML
     public void verif_col_eau() {
-        for (int i = 1; i <= Eaucol.size(); i++){
-            changeImageViewImg(imagevieweau.get(i - 1), Eaucol.get(i - 1).getImage());
+        for (int i = 0; i <= Eaucol.size(); i++){
+            changeImageViewImg(imagevieweau.get(i), Eaucol.get(i).getImage());
+        }
+    }
+
+    @FXML
+    public void verif_col_feu() {
+        for (int i = 0; i <= Feucol.size(); i++){
+            changeImageViewImg(imageviewfeu.get(i), Feucol.get(i).getImage());
+        }
+    }
+
+    @FXML
+    public void verif_col_rainbow() {
+        for (int i = 0; i <= Rainbowcol.size(); i++){
+            changeImageViewImg(imageviewrainbow.get(i), Rainbowcol.get(i).getImage());
+        }
+    }
+
+    @FXML
+    public void verif_col_tenebre() {
+        for (int i = 0; i <= Tenebrecol.size(); i++){
+            changeImageViewImg(imageviewtenebre.get(i), Tenebrecol.get(i).getImage());
+        }
+    }
+
+    @FXML
+    public void verif_col_vie() {
+        for (int i = 0; i <= Viecol.size(); i++){
+            changeImageViewImg(imageviewvie.get(i), Viecol.get(i).getImage());
+        }
+    }
+
+    @FXML
+    public void verif_col_lumiere() {
+        for (int i = 0; i <= Lumierecol.size(); i++){
+            changeImageViewImg(imageviewlumiere.get(i), Lumierecol.get(i).getImage());
         }
     }
 
@@ -684,6 +759,65 @@ public class HelloController implements Initializable {
         imagevieweau.add(ColEau9);
         imagevieweau.add(ColEau10);
 
+
+        imagevieweau.add(ColVie1);
+        imagevieweau.add(ColVie2);
+        imagevieweau.add(ColVie3);
+        imagevieweau.add(ColVie4);
+        imagevieweau.add(ColVie5);
+        imagevieweau.add(ColVie6);
+        imagevieweau.add(ColVie7);
+        imagevieweau.add(ColVie8);
+        imagevieweau.add(ColVie9);
+        imagevieweau.add(ColVie10);
+
+
+        imagevieweau.add(ColFeu1);
+        imagevieweau.add(ColFeu2);
+        imagevieweau.add(ColFeu3);
+        imagevieweau.add(ColFeu4);
+        imagevieweau.add(ColFeu5);
+        imagevieweau.add(ColFeu6);
+        imagevieweau.add(ColFeu7);
+        imagevieweau.add(ColFeu8);
+        imagevieweau.add(ColFeu9);
+        imagevieweau.add(ColFeu10);
+
+
+        imagevieweau.add(ColLum1);
+        imagevieweau.add(ColLum2);
+        imagevieweau.add(ColLum3);
+        imagevieweau.add(ColLum4);
+        imagevieweau.add(ColLum5);
+        imagevieweau.add(ColLum6);
+        imagevieweau.add(ColLum7);
+        imagevieweau.add(ColLum8);
+        imagevieweau.add(ColLum9);
+        imagevieweau.add(ColLum10);
+
+
+        imagevieweau.add(ColTe1);
+        imagevieweau.add(ColTe2);
+        imagevieweau.add(ColTe3);
+        imagevieweau.add(ColTe4);
+        imagevieweau.add(ColTe5);
+        imagevieweau.add(ColTe6);
+        imagevieweau.add(ColTe7);
+        imagevieweau.add(ColTe8);
+        imagevieweau.add(ColTe9);
+        imagevieweau.add(ColTe10);
+
+
+        imagevieweau.add(ColMulti1);
+        imagevieweau.add(ColMulti2);
+        imagevieweau.add(ColMulti3);
+        imagevieweau.add(ColMulti4);
+        imagevieweau.add(ColMulti5);
+        imagevieweau.add(ColMulti6);
+        imagevieweau.add(ColMulti7);
+        imagevieweau.add(ColMulti8);
+        imagevieweau.add(ColMulti9);
+        imagevieweau.add(ColMulti10);
 
 
         Feu.add(Cf1);
@@ -827,13 +961,13 @@ public class HelloController implements Initializable {
         Eaucol.add(Eau.get(alea_liste()));
 
         collection.add(Tenebre.get(alea_liste()));
-        Tenebrecol.add(Feu.get(alea_liste()));
+        Tenebrecol.add(Tenebre.get(alea_liste()));
 
         collection.add(Vie.get(alea_liste()));
-        Viecol.add(Feu.get(alea_liste()));
+        Viecol.add(Vie.get(alea_liste()));
 
         collection.add(Rainbow.get(alea_liste()));
-        Rainbowcol.add(Feu.get(alea_liste()));
+        Rainbowcol.add(Rainbow.get(alea_liste()));
 
 
     }
